@@ -26,3 +26,4 @@ Cho phép người dùng tùy chỉnh số lượng khẩu phần để tính to
 <b><h3><i>Tích Hợp Chat Bot: </i></h3><br>
 <p>Một chức năng độc đáo và hữu ích của một trang web nấu ăn có thể là tích hợp chat bot. Chat bot có thể cung cấp hỗ trợ trực tuyến, trả lời câu hỏi liên quan đến nấu ăn, gợi ý món ăn dựa trên yêu cầu của người dùng và cung cấp thông tin bổ sung về các công thức nấu ăn.</p><br>
 </b>
+![sơ đồ thiết kế web-nhóm 14](https://github.com/Huynx04/G-14/assets/154599779/eb17fd2b-1d5c-486d-bc66-0e3ecae5a665)
