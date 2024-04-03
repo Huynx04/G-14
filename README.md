@@ -15,7 +15,8 @@
 <p>Tích hợp thuật toán để đề xuất các công thức nấu ăn dựa trên sở thích và lịch sử tìm kiếm của người dùng, giúp họ khám phá và thử nghiệm các món mới.</p><br>
 <h3>Chức Năng Bán Hàng: </h3><br>
 <p>Mở rộng trang web nấu ăn để bao gồm một cửa hàng trực tuyến hoặc khu vực mua sắm, nơi người dùng có thể mua các nguyên liệu, dụng cụ nấu ăn và sách nấu ăn.
-Hiển thị các sản phẩm liên quan đến nấu ăn, bao gồm nguyên liệu chính và phụ, đồ dùng bếp, sách và dụng cụ nấu ăn.
+Hiển thị các sản phẩm liên quan đến nấu ăn, bao gồm nguyên liệu chính và phụ, đồ dùng bếp, sách và dụng cụ nấu ăn.![sơ đồ thiết kế web-nhóm 14](https://github.com/Huynx04/G-14/assets/154599779/eac0cd92-9a27-4e78-80fa-2621234da574)
+
 Cung cấp thông tin chi tiết về mỗi sản phẩm, bao gồm giá cả, mô tả, hình ảnh và đánh giá từ người dùng khác.
 Cho phép người dùng thêm sản phẩm vào giỏ hàng và thanh toán trực tuyến thông qua các phương thức thanh toán an toàn và tiện lợi.</p><br>
 <h3>Chức Năng Tính Calo: </h3><br>
@@ -26,4 +27,4 @@ Cho phép người dùng tùy chỉnh số lượng khẩu phần để tính to
 <b><h3><i>Tích Hợp Chat Bot: </i></h3><br>
 <p>Một chức năng độc đáo và hữu ích của một trang web nấu ăn có thể là tích hợp chat bot. Chat bot có thể cung cấp hỗ trợ trực tuyến, trả lời câu hỏi liên quan đến nấu ăn, gợi ý món ăn dựa trên yêu cầu của người dùng và cung cấp thông tin bổ sung về các công thức nấu ăn.</p><br>
 </b>
-![sơ đồ thiết kế web-nhóm 14](https://github.com/Huynx04/G-14/assets/154599779/eb17fd2b-1d5c-486d-bc66-0e3ecae5a665)
+![sơ đồ thiết kế web-nhóm 14](https://github.com/Huynx04/G-14/assets/154599779/d3ac0003-8fd3-48cc-b5ed-7a2d2542c60f)
