@@ -6,8 +6,11 @@
     font-family:'Poppins', sans-serif;
     cursor: pointer;
 }
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
 .header {
-   
     width: 100%;
     padding:30px 0px;
     margin-top:0px;
@@ -15,6 +18,11 @@
     justify-content:space-around;
     align-items: center;
     background: linear-gradient(to left ,#17b176, #f42424 ) ;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Đảm bảo header hiển thị trên các phần khác của trang */
 
 }
 .logo0{
