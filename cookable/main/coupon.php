@@ -99,8 +99,8 @@
     </footer>
     <script>
         function copyToClipboard(button) {
-            var codeElement = button.parentElement.querySelector('.code');
-            var tempInput = document.createElement('input');
+            let codeElement = button.parentElement.querySelector('.code');
+            let tempInput = document.createElement('input');
             tempInput.value = codeElement.innerText;
             document.body.appendChild(tempInput);
             tempInput.select();

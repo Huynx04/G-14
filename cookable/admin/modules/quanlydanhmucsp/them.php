@@ -1,4 +1,4 @@
-<p> thêm danh mục sản phẩm </p>
+<p> themdanhmucsp </p>
 <table border="1" width="80" style="border-collapse:collapse;" >
 <form method="post" action="modules/quanlydanhmucsp/xuly.php" > 
 <tr>

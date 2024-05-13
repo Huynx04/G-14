@@ -3,164 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COOKABLE - USER - Tài khoản</title>
-    <link rel="stylesheet" href="../css/user-shop.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <title>COOKABLE - USER - Tài khoản</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/user.css">
 </head>
 <body>
 
-    <div id="wrapper">
-        <!--header-->
-        <div id="header">
-            <a href="" class="logo">
-                <i class="fa-solid fa-truck-fast"></i>
-            </a>
-            <div id="menu">
-                <div class="item">
-                    <a href="">Trang chủ</a>
-                </div>
-                <div class="item">
-                    <a href="">Sản phẩm</a>
-                </div>
-                <div class="item">
-                    <a href="">Blog</a>
-                </div>
-                <div class="item">
-                    <a href="">Liên hệ</a>
-                </div>
-                <div class="item">
-                    <a href="">Tính calo</a>
-                </div><div class="item">
-                    <a href="">Công thức nấu ăn</a>
+    <!--header-->
+    <nav class="header navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        <div class="container-fluid">
+            <div class="logo0 col-1  ">
+                <a class="navbar-brand fa-solid fa-truck-fast" href="#"></a>
+            </div>
+            <div class="logo1 col-7 pa-y-2 " > 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="img4.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calo.html">Tính Calo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="congthuc.html">Công thức nấu ăn</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div id="actions">
-                <div class="item">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="item">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-            </div>
-        </div>
-        
-        <div id="banner">
-            <div class="box-left">
-                <h2>
-                    <span>USER - TÀI KHOẢN</span>
-                </h2>
-                <p>Bạn là một thành viên của Cookable với nhiều ưu đãi.</p>
-                <p>Bạn muốn đổi mật khẩu để tăng tính bảo mật?</p>
-                <p>Đổi mật khẩu ngay thôi!</p>
-            <a href="user_changepass.php">
-                <button> Đổi mật khẩu </button> 
-            </a>  
-            </div>
-            <div class="box-right">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_1.png?raw=true" alt="">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_2.png?raw=true" alt="">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
-            </div>
-            <div class="to-bottom">
-                <a href="">
-                    <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
-                </a>
+            <div class="logo2 col-1">
+                <a class="navbar-brand fa-solid fa-user " href="#"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="cart.html"></a>
             </div>
         </div>
-        
-        <div id="wp-user">
-
-            <!--thong tin ca nhan-->
-            <h2>THÔNG TIN TÀI KHOẢN COOKABLE</h2>
-            <div class="user-info">            
-                <label for="username">Tên người dùng</label>
-                <div id="usernameDisplay">antony76</div>
-
-                <label for="name">Họ và tên</label>
-                <div id="nameDisplay">nguyen van a</div>
-                
-                <label for="year">Năm sinh</label>
-                <div id="yearDisplay">2010</div>
-            
-                <label for="email">Email</label>
-                <div id="emailDisplay">nguyenvanantony67@gmail.com</div>
-            </div><br>       
-            <script>/*
-                // Lấy dữ liệu từ các trường nhập
-                const nameInput = document.getElementById('name');
-                const yearInput = document.getElementById('year');
-                const usernameInput = document.getElementById('username');
-                const emailInput = document.getElementById('email');
-                
-                // Hiển thị thông tin trong các phần tử <div>
-                const nameDisplay = document.getElementById('nameDisplay');
-                nameDisplay.textContent = nameInput.value;
-                
-                const yearDisplay = document.getElementById('yearDisplay');
-                yearDisplay.textContent = yearInput.value;
-                
-                const usernameDisplay = document.getElementById('usernameDisplay');
-                usernameDisplay.textContent = usernameInput.value;
-                
-                const emailDisplay = document.getElementById('emailDisplay');
-                emailDisplay.textContent = emailInput.value;*/
-            </script>
-
-            <!--doi mat khau-->
-            <h3>Bạn muốn đổi mật khẩu sao?</h3>
-            <a href="user_changepass.php">
-                <button> Đổi mật khẩu </button>  
-            </a><br>
-
-            <!--dang xuat-->
-            <h3>Hay là bạn muốn đăng xuất?</h3>
-            <a href="user_login.php">
-                <button> Đăng xuất </button>  
-            </a>    
-        </div>
-
+    </nav>
     
-        <!--footer-->
-        <div id="footer">
-    <div class="box">
+    <!--banner-->
+    <div class="banner container-fluid">
+        <div class="col-xxl-7 box-left">
+            <h2>
+                <span>USER - TÀI KHOẢN</span>
+            </h2>
+            <p>Bạn là một thành viên của Cookable với nhiều ưu đãi.</p>
+            <p>Bạn muốn đổi mật khẩu để tăng tính bảo mật?</p>
+            <p>Đổi mật khẩu ngay thôi!</p>
+        <a href="user_changepass.html">
+            <button> Đổi mật khẩu </button> 
+        </a> 
+        </div>
+        <div class="col-xl-5 box-right">
+            <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_1.png?raw=true" alt="">
+            <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_2.png?raw=true" alt="">
+            <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
+        </div>
+        <div class="to-bottom">
+            <a href="banner.html">
+                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!--users-->
+    <div class="users container-fluid">    
+        <div class="container bg-white">
+        <div class="row">
+            <h2>THÔNG TIN TÀI KHOẢN COOKABLE</h2>
+        </div>
+        <div class="row">
+
+            <div class="user-info">     
+                <label for="username">Tên người dùng: <span id="usernameDisplay">antony76</span></label>
+
+                <label for="name">Họ và tên: <span id="nameDisplay">nguyen van a</span></label>
+                
+                <label for="year">Năm sinh: <span id="yearDisplay">2010</span></label>
+            
+                <label for="email">Email: <span id="emailDisplay">nguyenvanantony67@gmail.com</span></label>
+            </div><br>
+
+            <h3>Bạn quên mật khẩu sao?</h3>
+            <a href="user_nopass.html">
+                <button> Quên mật khẩu </button>  
+            </a>
+        </div>
+        <div class="row">
+            <h2>   </h2>
+        </div>
+    </div>
+</div>   
+
+        
+    
+<!--footer-->
+<div class="footer container-fluid" style="background: rgba(0, 0, 0, 0.79); padding: 20px;">
+    <div class="row">
+        <div class="col-5"  >
+            <h3>NỘI DUNG</h3>
+            <div class="menu list-group-flush">
+                <a href="index.html" class="list-group-item list-group-item-action">Trang chủ</a>
+                <a href="img4.html" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="blog.html" class="list-group-item list-group-item-action">Blog</a>
+                <a href="lienhe.html" class="list-group-item list-group-item-action">Liên hệ</a>
+                <a href="calo.html" class="list-group-item list-group-item-action">Tính calo</a>
+                <a href="congthuc.html" class="list-group-item list-group-item-action">Công thức nấu ăn</a>
+            </div>
+        </div> 
+        <div class="col-7" >
+        <h3>LIÊN HỆ</h3>
+        <form action="">
+            <input class="border-none" type="text" placeholder="Địa chỉ email"  style="background: transparent; cursor: text;">
+            <button class="border-none">Nhận tin</button>
+        </form>
+        </div>
         <div class="logo">
             <img src="assets/logo.png" alt="">
         </div>
-        <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        <p class="text-secondary ">Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
     </div>
-    <div class="box">
-        <h3>NỘI DUNG</h3>
-        <ul class="quick-menu">
-            <div class="item">
-                <a href="">Trang chủ</a>
-            </div>
-            <div class="item">
-                <a href="">Sản phẩm</a>
-            </div>
-            <div class="item">
-                <a href="">Blog</a>
-            </div>
-            <div class="item">
-                <a href="">Liên hệ</a>
-            </div>
-            <div class="item">
-                <a href="">Tính calo</a>
-            </div>
-            <div class="item"> 
-                <a href=""> Công thức nấu ăn</a>
-            </div>
-        </ul>
-    </div>
-    <div class="box">
-        <h3>LIÊN HỆ</h3>
-        <form action="">
-            <input type="text" placeholder="Địa chỉ email">
-            <button>Nhận tin</button>
-        </form>
-    </div>
-    </div>
-    </div>
+</div>
+
     <!-- Thêm vào cuối tệp index.html -->
     <div id="chatbot-circle" onclick="toggleChat()">
     <p> 

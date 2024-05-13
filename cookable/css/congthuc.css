@@ -3,82 +3,103 @@
 *{
     padding:0;
     margin:0;
-    box-sizing: border-box;
+    box-sizing: border-box ;
     font-family:'Poppins', sans-serif;
     cursor: pointer;
 }
 
-#wrapper {
-    width: 100%;
-    height: 40%;
 
-}
-#header {
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+
+.header {
    
-    width: 100%;
-    padding:30px 0px;
-    margin-top:0px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background: linear-gradient(to left ,#17b176, #f42424 ) ;  
+        width: 100%;
+        padding:30px 0px;
+        margin-top:0px;
+        display: flex ;
+        justify-content:space-around;
+        align-items: center;
+        background: linear-gradient(to left ,#17b176, #f42424 ) ;  
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+    
+    
 
+}.logo0{
+    padding-left: 3%;
 }
 
-#menu {
-    list-style:none;
-    display: flex;
+/* .logo1 {
+    margin-left: 0;
+
+} */
+.logo2 {
+    padding-right:0px;
 }
 
-#menu .item {
-    margin:0px 25px;
+.navbar-brand{
+    color:rgb(60, 54, 243);
 }
 
-#menu .item a {
-    color:#d2e0db;
-    text-decoration: none;
+.navbar-brand:hover {
+    color: rgb(12, 8, 126);
 }
 
-
-#actions {
-    display: flex;
+h1 {
+    font-size:32px;
+    color:#626a67;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:72px;
+    color:#626a67;
+    font-weight: bold;
 }
 
-#actions .item {
-    margin-left:22px;
-}
-
-
-#banner {
+.banner {
     width: 100%;
     background-image :url("https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/banner.png?raw=true");
     height: 463px;
-    margin-top:0px;
+    margin-top:100px;
     display: flex;
     padding:0px 133px;
     position :relative ; 
-
-    
 }
-
-#banner .box-left ,#banner .box-right {
+.box-left ,.box-right {
     width: 50%;
 }
-
-#banner  .box-left h2 {
-    font-size:48px;
+.box-left h2 {
+    font-size: 45px;
     margin-top:75px;
+    margin-bottom:30px;
     color:#fff;
 }
-
-#banner .box-left p {
+.box-left p {
     color:#D0D0D0;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
 }
-
-#banner .box-left button {
+.box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-left button {
     width: 191px;
     height: 40px;
-    margin-top:41px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background:#1d1a1a;
     border:none;
     outline:none;
@@ -88,32 +109,33 @@
     transition:0.4s;
 }
 
-#banner .box-left button:hover {
+
+
+.box-left button:hover {
     background:orange;
 }
 
-#banner .box-right {
+
+
+
+.box-right {
     padding-left:200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#banner .box-right img {
+.box-right img {
     margin:0px 10px;
     animation :animation 3s infinite linear; 
 }
-
-#banner .box-right img:nth-child(1)
+.box-right img:nth-child(1)
 {
     animation-delay: 0.5s;
 }
-#banner .box-right img:nth-child(2)
-{
-    
+.box-right img:nth-child(2)
+{ 
     animation-delay: 1s;
 }
-
 @keyframes animation {
     0%{
         transform:translateY(0px);
@@ -126,8 +148,6 @@
     }
     
 }
-
-
 .image-container img {
     width: 100%;
     height: 100%;
@@ -138,354 +158,426 @@
     bottom:-40px;
     left:50%;
     transform:translateX(-50%);
+
+}
+
+.banner .to-bottom a img:hover{
+    padding:2px; 
 }
 
 
-#top  {
-  width: 100%; 
-  height: 300px; 
-  text-align: center;
+h1 {
+   
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    text-align: center;    
+    font-size: 400%;
 }
 
-#top h1 {
-  padding-top: 30px;
-  margin-top: 40px;
-  font-variant: small-caps;
-  text-shadow:   #f6874b 2px 3px 4px;
-  font-size: 1000%;
-  display: block;
-}
-
-/* nguyên liệu */
 
 h2{
-  font-size: 40px;
+    margin-bottom: 30px; 
+    margin-top: 30px;
+    text-align: center;    
+    font-size: 200%;
 }
 
-.eat {
- 
-  height: 500px; 
-  width: 1500px;  
-  background: #fddbd1;
-  padding: 50px; 
-  margin: 0 auto; 
-  background-repeat: no-repeat;
-  text-align: center;
+ul{
+    list-style: none;
 }
 
-.eat__list-food {
-  margin: auto;
-  display: inline-flex;
+#nguyenlieu #phuongphap{
+    width: 100%;
+    margin: auto; 
 }
 
-.eat__item-food {
-  list-style: none;
-  margin-right: 50px;
+ .food{
+    margin: auto; 
+    width: 90%;
+    display: block; 
+    text-align: center;
 
-  
-}
-
-.food-link-text{
-  display: block; /* Display the text as a block element */
-  margin-top: 20px; /* Add some top margin to separate it from the image */
-  font-size: 24px;
 }
 
-.food-link-img {
-  display: flex;
-  width: 400px;
-  height: 380px;
+.food-item{
+    display: inline-block; 
+    margin-right: 2%; 
+    margin-left: 2%; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    box-shadow: 10px 10px 5px lightblue;
+    transform: rotate(2deg);
+    border-radius: 10px;
+
 }
 
-
-/* 5.1 Comments */
-#comments {
-  position: relative;
-  margin: 42px 0 0;
-  padding: 42px 0 0 0;
-  border-top: 1px solid #e1e1e1;
-}
-#comments h3 {
-  color: #545454;
-  font-weight: normal;
-  margin-bottom: 1.067em;
-}
-#comments .comment.thread-even {
-  background: #fafafa;
-  background: rgba(0, 0, 0, 0.02);
-  border-bottom: 1px solid #e1e1e1;
-}
-#comments .comment {
-  margin-top: 10px;
-  width: 100%;
-  list-style-type: none;
-}
-#comments .comment .comment-container {
-  position: relative;
-  padding: 15px;
-}
-#comments .comment-head {
-  margin: 0 0 15px 0;
-}
-#comments .avatar {
-  float: left;
-  margin: 0 15px 10px 0;
-}
-#comments .avatar img {
-  margin: 0;
-  vertical-align: middle;
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-}
-#comments-title > em {
-  color: #c899b1;
-}
-#comments .comment-head .name {
-  margin: 0;
-  font-weight: 600;
-  font-size: 15px;
-  font-family: "Segoe UI";
-  color: #c24444;
-}
-#comments .comment-head .date,
-#comments .comment-head .edit,
-#comments .comment-head .perma {
-  font-size: 13px;
-  font-family: "Segoe UI";
-}
-#comments .comment-entry p {
-  margin: 0 0 10px 0;
-}
-#comments .reply {
-  padding-top: 10px;
-  padding-right: 5px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-#comments .reply a {
-  color: #fff;
-}
-#comments ul.children {
-  margin: 10px 10px 0 25px;
-  padding: 0;
-}
-#comments ul.children li {
-  border-top: 1px solid #e1e1e1;
-}
-#comments .cancel-comment-reply {
-  margin: 10px 0;
-}
-#comments .navigation a {
-  display: block;
-  margin: 15px 0 0 0;
-  text-decoration: none;
-}
-#comments h3#pings {
-  margin-top: 25px;
-}
-#comments .pingbacks li.pingback {
-  margin: 10px 0;
-}
-#comments .pingbacks li.pingback .reply {
-  display: none;
-}
-
-/* 5.2 Comments Form */
-#respond {
-  margin: 42px 0 0;
-}
-#respond h3 {
-  color: #c899b1;
-  font-weight: normal;
-  text-transform: uppercase;
-  padding: 21px 0 13px;
-  margin-bottom: 1.067em;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
-}
-#respond #reply-title small {
-  display: block;
-  font-size: 14px;
-  margin-top: 5px;
-}
-#respond .left {
-  float: left;
-  width: 200px;
-  margin-right: 15px;
-}
-#respond .right {
-  float: left;
-  width: 380px;
-}
-#respond label {
-  font-size: 15px;
-  color: #000;
-  display: block;
-  margin-bottom: 10px;
-}
-#commentform {
-  margin: 15px 0 0 0;
-}
-#commentform input.txt,
-#commentform textarea {
-  font: 300 14px/1em "Times New Roman", Helvetica, sans-serif;
-  border: 1.5px solid #e1e1e1;
-  border-radius: 3px;
-}
-#commentform input.txt {
-  width: 170px;
-  margin: 0 10px 10px 0;
-  padding: 10px 10px;
-  border: 1.5px solid #e1e1e1;
-  border-radius: 3px;
-}
-#commentform textarea {
-  width: 97% !important;
-  padding: 6px 7px;
-}
-#commentform input#submit {
-  float: right;
-  margin: 15px 0 0 0;
-  background: #bf9764;
-  border: none;
-  font-size: 13px;
-  padding: 8px 20px;
-  color: #fff;
-}
-
-/* /* CSS code for comment  */
-#comment-section {
-  margin-top: 50px;
-  text-align: center;
-}
-
-#comment-form {
-  width: 70%; 
-  margin: 0 auto;
-}
-
-#comment-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-#comment-form input[type="text"],
-#comment-form input[type="email"],
-#comment-form textarea {
-  width: 100%;
-  padding: 12px; /* Increase padding for input fields */
-  margin-bottom: 15px; /* Increase margin bottom for spacing */
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-
-#comment-form textarea {
-  resize: vertical;
-}
-
-#comment-form button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 24px; /* Increase padding for the button */
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#comment-form button:hover {
-  background-color: #45a049;
+ .food-item:hover{
+    border: 3px solid rgb(9, 106, 58);
 }
 
 
-#footer {
-  width: 100%;
-  background:rgb(0,0,0,0.79);
-  height: 380px;
-  margin-top:138px;
-  padding:0px 63px;
-  padding-top:57px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#footer .box {
-  width: 250px;
-  color:#fff;
-}
-
-#footer .box .quick-menu {
-  margin-top:40px;
+.text{
+    color: rgb(29, 24, 24); 
+    padding: 10px; 
+    display: block;
+    font-size: 20px;
+    text-align: center;
 
 }
 
 
-#footer .box .quick-menu .item{
-  margin-bottom:12px;
-
-}
-#footer .box .quick-menu ,.item a{
-  color:#fff;
-  text-decoration: none;
+#wp-blogs {
+    padding-top:116px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
 }
 
 
-
-#footer .box form input {
-  width: 294px;
-  height: 42px;
-  background:transparent;
-  padding-left:20px;
-  color:#fff;
-  margin-top:30px;
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-#footer .box form button {
-  background:#362f2f;
-  box-shadow: 5px 5px 4px rgba(0,0,0.25);
-  width: 163px;
-  height: 38px;
-  margin-top:29px;
-  color:#fff;
+#wp-blogs h2, h3 {
+    text-align: center;
+    margin-bottom: 46px;
+    font-size:32px;
+    color:#626a67;
 }
-/* ThÃªm vÃ o tá»‡p CSS cá»§a báº¡n */
+
+#list-post {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-post .item {
+    width: 290px;
+    height: 374px;
+    background:#362f2f;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#list-post .item:hover{
+    border: 3px solid rgb(160, 234, 209);
+}
+
+#list-post .item img {
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+}
+
+#list-post .item .name {
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top:21px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item:hover{
+    background: orange;
+}
+
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+#wp-blogs button {
+    width: 191px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: width 2s;
+    display: block;
+
+}
+
+#wp-blogs button:hover {
+    background:orange;
+    width: 300px;
+}
+
+
+/*Carousel*/
+
+
+#blogcr .carou-cap {
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px
+}
+
+#blogcr .carou-cap h3{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size:28px;
+    color:#fff;
+    font-weight: bold;
+}
+
+#blogcr .carou-cap p{
+    color:#fff ;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.carousel-item img{
+    height:325px ;
+    object-fit: cover;
+}
+
+
+
+.post{
+    margin: auto; 
+    height: auto; 
+    margin-top: 5%;
+    margin-bottom: 4%;
+
+}
+
+.post p{
+    text-align: center;}
+
+
+.post a {
+    
+    text-align: center;
+    padding: 47%;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:32px;
+    color:#626a67;
+}
+
+.footer form {
+    align-items: center;
+}
+
+.footer .row {
+    padding-top:3%;
+}
+
+.footer .row p {
+    text-align: center;
+    color: #626a67;
+    font-size: larger;
+}
+.footer .menu a {
+    text-align: center;
+    color: #626a67;
+    font-size: larger;
+}
+.footer .menu a:hover {
+    color: #fff;
+}
+.footer input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #626a67;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom:20px ;
+    background: transparent;
+}
+.menu a{
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+}
+.footer button {
+    width: 171px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#626a67;
+    border:none;
+    outline:none;
+    color:#ccc;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+    display: block;
+}
+.footer button:hover {
+    background-color: #1d1a1a;
+    color: #626a67;
+}
+
+
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer .col-xxl-7, .col-xxl-5 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+/* chatbox */
 #chatbot-circle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #009688;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
 }
 
+
+#chatbot-circle:hover{
+    background-color: #04544c;
+
+}
 #chatbot-interface {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 300px;
-  height: 400px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  overflow: auto;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: auto;
 }
 
 #chatbot-messages {
-  padding: 10px;
-  height: 85%;
-  overflow: auto;
+    padding: 10px;
+    height: 85%;
+    overflow: auto;
 }
 
 #chatbot-input {
-  width: 100%;
-  height: 15%;
-  padding: 5px;
-  box-sizing: border-box;
+    width: 100%;
+    height: 15%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Kích thước màn hình là 768px hoặc nhỏ hơn */
+
+    .banner {
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .box-left, .box-right {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    h2 {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+    .box-left p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    .box-right {
+        width: 50%;
+        padding-left: 0; 
+        padding-right: 0; 
+        margin-top: 25px; 
+    }
+    .box-right img {
+        width: 100%;
+        margin: 20px 5px 0px 25px;
+    
+    }
+/* 
+    .container li{
+        display: block;
+        background-color: #009688;
+    }
+   */
+
+    /*footer*/
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer .col-xxl-7, .col-xxl-5 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }

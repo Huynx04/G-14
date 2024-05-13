@@ -1,90 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COOKABLE</title>
-    <link rel="stylesheet" href="../css/scr_kho2.css">
+
+    <title>COOKABLE - Công thức</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/scr_kho2.css">
 </head>
 
 <body>
+    
 
-
-    <div id="wrapper">
-        <div id="header">
-            <a href="" class="logo">
-                <i class="fa-solid fa-truck-fast"></i>
-            </a>
-            <div id="menu">
-                <div class="item">
-                    <a href="">Trang chủ</a>
-                </div>
-                <div class="item">
-                    <a href="">Sản phẩm</a>
-                </div>
-                <div class="item">
-                    <a href="">Blog</a>
-                </div>
-                <div class="item">
-                    <a href="">Liên hệ</a>
-                </div>
-                <div class="item">
-                    <a href="">Tính calo</a>
-                </div><div class="item">
-                    <a href="">Công thức nấu ăn</a>
+  
+    <!--header-->
+    <nav class="header navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        <div class="container-fluid">
+            <div class="logo0 col-1  ">
+                <a class="navbar-brand fa-solid fa-truck-fast" href="main/user.php"></a>
+            </div>
+            <div class="logo1 col-7 pa-y-2 " > 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.php">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="main/img4.php">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="main/blog.php">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="main/lienhe.php">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="main/calo.php">Tính Calo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled active" href="main/congthuc.php">Công thức nấu ăn</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div id="actions">
-                <div class="item">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="item">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
+            <div class="logo2 col-1">
+                <a class="navbar-brand fa-solid fa-user " href="main/user.php"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="main/cart.php"></a>
             </div>
         </div>
-        <div id="banner">
-            <div class="box-left">
-                <h2>
-                    <span>COOKABLE</span>
-                </h2>
-                <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng
-                    hợp vệ sinh đến người dùng,phục vụ người dùng 1 cái
-                    hoàn hảo nhất</p>
-                <button>Tìm hiểu </button>
-            </div>
-            <div class="box-right">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_1.png?raw=true" alt="">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_2.png?raw=true" alt="">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
-            </div>
-            <div class="to-bottom">
-                <a href="">
-                    <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
-                </a>
-            </div>
-        </div>
+    </nav>
+<!--banner-->
+<div class="banner container-fluid">
+    <div class="col-sm-7 box-left">
+        <h2 >
+            <span>Công thức</span>
+        </h2>
+        <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng,</p>
+        <p> hợp vệ sinh đến người dùng,phục vụ người dùng 1 cái
+            hoàn hảo nhất</p>
+            <a href="main/blog_post.php">
+                <button> Đăng bài </button>
+
+            </a>    </div>
+    <div class="col-sm-5 box-right">
+        <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_1.png?raw=true" alt="">
+        <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_2.png?raw=true" alt="">
+        <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
     </div>
+    <div class="to-bottom">
+        <a href="main/banner.php">
+            <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
+        </a>
+    </div>
+</div>
+
     
     <!-- top  -->
     <h1>Mì vịt tiềm</h1>
-    <div id = "img"></div>
+   
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="https://i.ytimg.com/vi/bMROZrpaDMU/maxresdefault.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
            <!-- end top -->
 
-  <!-- intro -->
-  <div class="container">
-<div class="intro"><em>“Tiềm”, hay còn gọi là “hầm”, là một trong những cách thức nấu ăn có nguồn gốc từ Trung Hoa. Thực phẩm sẽ được rán hoặc xào sơ qua trước khi cho vào ninh nhỏ lửa trong thời gian lâu để làm chín nhừ dần. Đối với món vịt tiềm, việc rán vịt trước khi ninh trong nước sẽ làm món ăn không bị bở bã, đùi vịt vẫn giữ nguyên được hình dạng và hương vị thơm ngon ban đầu. Mì vịt tiềm đối với các bạn ở trong Nam không còn xa lạ, nhưng ở miền Bắc thực sự khó kiếm một quán mì vịt có hương vị gần gũi và dễ ăn, mà thường nước dùng sẽ bị quá nồng hay quá ngọt, thịt vịt đôi khi xử lý không khéo vẫn còn mùi hôi. Với công thức mà bọn mình sắp giới thiệu dưới đây không đòi hỏi quá nhiều gia vị phức tạp, nhưng vẫn đảm bảo được mùi vị nước dùng đậm đà vừa phải, ngoài ra mùi hôi của vịt còn được khử sạch bằng phương pháp khá đơn giản và hiệu quả.</em></div>
-</div>
+
 
 
 
 <!-- main -->
-<div id="recipe-tabs">
-
-<div class="main">
+<div id = "box">
 <ul class="inside"> 
 <h2>Nguyên liệu</h2>
 <li><em><span style="color: #000000;">1 kg đùi vịt</span></em></li>
@@ -108,11 +122,7 @@
 <li><em><span style="color: #000000;">2 gr tiêu xay</span></em></li>
 <li><em><span style="color: #000000;">200 gr mỳ trứng khô hoặc 400 &#8211; 500 g mỳ trứng tươi </span></em></li>
 </ul>
-</div>
 
-
-
-    <div id="main">  
       <h2>Cách làm</h2> 
         <p><span style="color: #000000;">1. Rửa và xát sạch đùi vịt bằng rượu trắng và gừng khoảng 2 – 3 lần để khử mùi hôi, để ráo.</span></p>
         <p><span style="color: #000000;">2. Hành khô bóc vỏ, nướng xém vàng. Xương lợn rửa sạch, cho vào nồi ngập nước, đun sôi khoảng 1 phút cho ra hết cặn bẩn, rửa lại rồi cho lên bếp ninh cùng khoảng 4 bát tô nước và hành khô đã nướng trong 30 phút.</span></p>
@@ -131,71 +141,128 @@
         <p><span style="color: #000000;">*Yêu cầu thành phẩm: thịt vịt đậm đà không còn mùi hôi, mềm nhừ. Nước dùng thơm nhẹ mùi các vị thuốc bắc, vị ngọt vừa phải.</span></p>
        
         </div>
-    </div>
+    
 
-<!-- --footer -->
-<div id="footer">
-    <div class="box">
-        <div class="logo">
-            <img src="assets/logo.png" alt="">
+   <!--list bai viet de xuat-->
+   <div class="blogs container-fluid">    
+    <div class="container bg-white">
+ <div class="row">
+    <h2>NHỮNG CHIA SẺ HAY HO</h2>
+</div>
+<!-- Carousel -->
+<div id="blogcr" class="carousel slide" data-bs-ride="carousel">          
+    <!--button-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#blogcr" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#blogcr" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#blogcr" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!--Slideshow-->
+    <div class="container-fluid">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      <a href="main/blog_post.php">
+        <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/12/6/20200513165141155039rau-bina-la-rau-gi-max-1800x1800-17018491338671987365707.jpg" alt="Rau xanh tốt như thế nào?" class="d-block" style="width:100%">
+        <div class="carou-cap">
+            <h3>Rau xanh tốt như thế nào?</h3>
+            <p>Không chỉ giàu chất xơ, rau xanh còn nhiều ưu điểm khác mà bạn chưa biết.</p>
         </div>
-        <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        </a>
+      </div>
+      <div class="carousel-item">
+      <a href="main/blog_post.php">
+        <img src="https://wallpapercave.com/wp/wp6557433.jpg" alt="Sự diệu kì của dâu tây" class="d-block" style="width:100%">
+        <div class="carou-cap">
+            <h3>Sự diệu kì của dâu tây</h3>
+            <p>Dâu tây sẽ làm bạn bất ngờ về khả năng của nó.</p>
+        </div>
+        </a>
+      </div>
+      <div class="carousel-item">
+      <a href="main/blog_post.php">
+        <img src="https://justcook.butcherbox.com/wp-content/uploads/2020/03/dinner2.jpg" alt="Tự nấu ngon như ở nhà hàng!" class="d-block" style="width:100%">
+        <div class="carou-cap">
+            <h3>Tự nấu ngon như ở nhà hàng!<h3>
+            <p>Bạn muốn ăn ngon nhưng không tốn quá nhiều tiền? Easy!!</p>
+        </div>
+        </a>
+      </div>
     </div>
-    <div class="box">
+    
+    <!--icon mũi tên-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#blogcr" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#blogcr" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="post">
+<h2>BÀI VIẾT CỦA BẠN</h2>
+<div>
+    <p>Bạn chưa có bài đăng nào cả!</p>
+    
+</div>
+</div>
+
+ <!--footer-->
+<div class="footer container-fluid" style="background: rgba(0, 0, 0, 0.79); padding-top: 20px;">
+<div class="row">
+    <div class="col-5"  >
         <h3>NỘI DUNG</h3>
-        <ul class="quick-menu">
-            <div class="item">
-                <a href="">Trang chủ</a>
-            </div>
-            <div class="item">
-                <a href="">Sản phẩm</a>
-            </div>
-            <div class="item">
-                <a href="">Blog</a>
-            </div>
-            <div class="item">
-                <a href="">Liên hệ</a>
-            </div>
-            <div class="item">
-                <a href="">Tính calo</a>
-            </div>
-            <div class="item"> 
-                <a href=""> Công thức nấu ăn</a>
-            </div>
-        </ul>
+        <div class="menu list-group-flush">
+                <a href="index.php" class="list-group-item list-group-item-action">Trang chủ</a>
+                <a href="main/img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="main/blog.php" class="list-group-item list-group-item-action">Blog</a>
+                <a href="main/lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
+                <a href="main/calo.php" class="list-group-item list-group-item-action">Tính calo</a>
+                <a href="main/congthuc.php" class="list-group-item list-group-item-action">Công thức nấu ăn</a>
+        </div>
+    </div> 
+    <div class="col-7" >
+    <h3>LIÊN HỆ</h3>
+    <form action="">
+        <input class="border-top" type="text" placeholder="Địa chỉ email"  style="background: transparent; cursor: text;">
+        <button class="border-top">Nhận tin</button>
+    </form>
     </div>
-    <div class="box">
-        <h3>LIÊN HỆ</h3>
-        <form action="">
-            <input type="text" placeholder="Địa chỉ email">
-            <button>Nhận tin</button>
-        </form>
+    <div class="logo">
+        <img src="assets/logo.png" alt="">
     </div>
-    </div>
-    </div>
-    <!-- Thêm vào cuối tệp index.html -->
-    <div id="chatbot-circle" onclick="toggleChat()">
+    <p class="text-secondary ">Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+  
+
+   
+</div>
+</div>
+<!-- Thêm vào cuối tệp index.html -->
+ <!-- Thêm vào cuối tệp index.html -->
+ <div id="chatbot-circle" onclick="toggleChat()">
     <p> 
     <i class="fa-solid fa-robot"></i>
     </p>
     </div>
-    
-    <div id="chatbot-interface" style="display: none;">
-    <div id="chatbot-messages"></div>
-    <input id="chatbot-input" type="text" placeholder="Type your message here" />
-    </div>
-    
-    <script>
-    function toggleChat() {
-    var chatInterface = document.getElementById('chatbot-interface');
-    if (chatInterface.style.display === "none") {
-    chatInterface.style.display = "block";
-    } 
-    else {
-    chatInterface.style.display = "none";
-    }
-    }
-    </script>
-           
-               
-            
+
+<div id="chatbot-interface" style="display: none;">
+<div id="chatbot-messages"></div>
+<input id="chatbot-input" type="text" placeholder="Type your message here" />
+</div>
+
+<script>
+function toggleChat() {
+var chatInterface = document.getElementById('chatbot-interface');
+if (chatInterface.style.display === "none") {
+chatInterface.style.display = "block";
+} 
+else {
+chatInterface.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>

@@ -3,79 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COOKABLE - CÔNG THỨC - Chiên</title>
-    <link rel="stylesheet" href="../css/chien1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <title>COOKABLE - CÔNG THỨC - Chiên</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bstrap.css">
 </head>
 <body>
 
-    <div id="wrapper">
-        <!--header-->
-        <div id="header">
-            <a href="" class="logo">
-                <i class="fa-solid fa-truck-fast"></i>
+    <!--header-->
+    <nav class="header navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        <div class="container-fluid">
+            <div class="logo0 col-1  ">
+                <a class="navbar-brand fa-solid fa-truck-fast" href="main/user.php"></a>
+            </div>
+            <div class="logo1 col-7 pa-y-2 " > 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.php">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="main/img4.php">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="main/blog.php">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="main/lienhe.php">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="main/calo.php">Tính Calo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled active" href="main/congthuc.php">Công thức nấu ăn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo2 col-1">
+                <a class="navbar-brand fa-solid fa-user " href="main/user.php"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="main/cart.php"></a>
+            </div>
+        </div>
+    </nav>
+    
+    <!--banner-->
+    <div class="banner container-fluid">
+        <div class="col-xxl-7 box-left">
+            <h2>
+                <span>CÔNG THỨC - CHIÊN</span>
+            </h2>
+            <p>Học hỏi những bí quyết tuyệt vời từ người khác</p>
+            <p>Liệu bài viết của bạn có được mọi người quan tâm</p>
+            <a href="main/blog_post.php">
+            <button> Đăng bài </button> 
+        </a>  
+        </div>
+        <div class="col-xl-5 box-right">
+            <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_1.png?raw=true" alt="">
+            <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_2.png?raw=true" alt="">
+            <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
+        </div>
+        <div class="to-bottom">
+            <a href="main/banner.php">
+                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
             </a>
-            <div id="menu">
-                <div class="item">
-                    <a href="">Trang chủ</a>
-                </div>
-                <div class="item">
-                    <a href="">Sản phẩm</a>
-                </div>
-                <div class="item">
-                    <a href="">Blog</a>
-                </div>
-                <div class="item">
-                    <a href="">Liên hệ</a>
-                </div>
-                <div class="item">
-                    <a href="">Tính calo</a>
-                </div><div class="item">
-                    <a href="">Công thức nấu ăn</a>
-                </div>
-            </div>
-            <div id="actions">
-                <div class="item">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="item">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-            </div>
         </div>
-        
-        <div id="banner">
-            <div class="box-left">
-                <h2>
-                    <span>CÔNG THỨC - CHIÊN</span>
-                </h2>
-                <p>Học hỏi những bí quyết tuyệt vời từ người khác</p>
-                <p>Liệu bài viết của bạn có được mọi người quan tâm</p>
-            <a href="blog.html">
-                <button> Đăng bài </button> 
-            </a>  
-            </div>
-            <div class="box-right">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_1.png?raw=true" alt="">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_2.png?raw=true" alt="">
-                <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
-            </div>
-            <div class="to-bottom">
-                <a href="">
-                    <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
-                </a>
-            </div>
-        </div>
-        
-        <div id="wp-blogs">
+    </div>
 
-            <!--bai viet-->
+    <!--blog-->
+    <div class="blogs container-fluid">    
+        <div class="container bg-white">
+        <div class="row">
             <h2>CÔNG THỨC BẠN CẦN</h2>
-            <!--day la vi du-->
-            <div id="post">
+        </div>
+        <div class="row">
+            <div id="post" class="post">
                 <h5>Nem cá</h5>
-                <p class="like">Số lượt thích: 180</p>
+                <p class="like">Số lượt thích: <span id="like-count">182</span></p>
                 <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/473888KPU/nem-ca-lang-4.jpg" alt="Nem cá"><br>
                 
                 <!--intro-->
@@ -128,157 +138,173 @@
                 <p class="date">Published on: January 1, 2024</p>
                 -->
             </div>
-
-            <!--yeu thich-->
-            <h4>Bạn có thích công thức này không?</h4>
-            <div class="favorite">
-                <button class="favorite-button" aria-label="Thêm vào mục yêu thích">
-                    <svg class="heart-icon" viewBox="0 0 24 24">
-                        <path fill="none" d="M0 0h24v24H0z"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
+        </div> 
+            <div class="row">
+                <h4>Bạn có thích bài viết này không?</h4>
+                <div class="favorite post">
+                    <button class="favorite-button" aria-label="Thêm vào mục yêu thích">
+                        <svg class="heart-icon" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z"/>
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Bình luận</h3>
+                <div class="comments post">
+                    <div class="comment-form">
+                        <textarea id="comment" placeholder="Nhập bình luận của bạn..."></textarea>
+                        <button onclick="submitComment()">Gửi</button>
+                    </div><br>
+                    <div class="comment-list">
+                        <!-- Danh sách bình luận sẽ được hiển thị ở đây -->
+                    <div>
+                        <p>Hiện chưa có bất kỳ bình luận nào!</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2>NHỮNG CHIA SẺ HAY HO</h2>
+            </div>
+            <!-- Carousel -->
+            <div id="blogcr" class="carousel slide" data-bs-ride="carousel">          
+                <!--button-->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#blogcr" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#blogcr" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#blogcr" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!--Slideshow-->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                  <a href="main/blog_post.php">
+                    <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/12/6/20200513165141155039rau-bina-la-rau-gi-max-1800x1800-17018491338671987365707.jpg" alt="Rau xanh tốt như thế nào?" class="d-block" style="width:100%">
+                    <div class="carou-cap">
+                        <h3>Rau xanh tốt như thế nào?</h3>
+                        <p>Không chỉ giàu chất xơ, rau xanh còn nhiều ưu điểm khác mà bạn chưa biết.</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                  <a href="main/blog_post.php">
+                    <img src="https://wallpapercave.com/wp/wp6557433.jpg" alt="Sự diệu kì của dâu tây" class="d-block" style="width:100%">
+                    <div class="carou-cap">
+                        <h3>Sự diệu kì của dâu tây</h3>
+                        <p>Dâu tây sẽ làm bạn bất ngờ về khả năng của nó.</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                  <a href="main/blog_post.php">
+                    <img src="https://justcook.butcherbox.com/wp-content/uploads/2020/03/dinner2.jpg" alt="Tự nấu ngon như ở nhà hàng!" class="d-block" style="width:100%">
+                    <div class="carou-cap">
+                        <h3>Tự nấu ngon như ở nhà hàng!<h3>
+                        <p>Bạn muốn ăn ngon nhưng không tốn quá nhiều tiền? Easy!!</p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                
+                <!--icon mũi tên-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#blogcr" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
                 </button>
-            </div><br>
-
-            <!--binh luan-->
-            <h3>Bình luận</h3>
-            <div class="comments">
-                <div class="comment-form">
-                    <textarea id="comment" placeholder="Nhập bình luận của bạn..."></textarea>
-                    <button onclick="submitComment()">Gửi</button>
-                </div><br>
-                <div class="comment-list">
-                    <!-- Danh sách bình luận sẽ được hiển thị ở đây -->
+                <button class="carousel-control-next" type="button" data-bs-target="#blogcr" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="row">
+                <h2>BÀI VIẾT CỦA BẠN</h2>
                 <div>
-                    <p>Hiện chưa có bất kỳ bình luận nào!</p>
+                    <p>Bạn chưa có bài đăng nào cả!</p>
                 </div>
-                </div>
-            </div><br>
-            
-            <!--list bai viet de xuat-->
-            <h2>NHỮNG CHIA SẺ HAY HO</h2>
-            <ul id="list-post">
-                <div class="item">
-                    <a href="">
-                    <div class="image-container">
-                        <img src="https://i.pinimg.com/564x/76/02/ad/7602ad62dc00890419658642f0aa462c.jpg" alt="Công thức ngon mà đơn giản cho cuối tuần nhàn hạ!">
-                    </div>
-                    <div class="name">Công thức ngon mà đơn giản cho cuối tuần nhàn hạ!</div>
-                   </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                    <div class="image-container">
-                        <img src="https://i.pinimg.com/564x/b5/a0/93/b5a0937082208649ad89b5cacc3a2c75.jpg" alt="Món ăn ít calo cho giảm cân dễ chế biến.">
-                    </div>
-                    <div class="name">Món ăn ít calo cho giảm cân dễ chế biến.</div>
-                    </a>
-                </div>               
-                 <div class="item">
-                    <a href="">
-                    <div class="image-container">
-                    <img src="https://i.pinimg.com/564x/b6/f4/c9/b6f4c9fa4d279758fe56b987320b8268.jpg" alt="Các món dễ nấu với trứng."></div>
-                    <div class="name">Các món dễ nấu với trứng.</div>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="">
-                    <div class="image-container">
-                        <img src="https://i.pinimg.com/564x/fe/aa/12/feaa12ed0e4195732ebccdb960cee559.jpg" alt="Chỉ còn trứng, nấu gì bây giờ!">
-                    </div>
-                    <div class="name">Chỉ còn trứng, nấu gì bây giờ!</div>
-                    </a>
-                </div>           
-                    
-            </ul>            
-            <div class="list-page">
-                <div class="item">
-                    <a href="">1</a>
-                </div>
-                <div class="item">
-                    <a href="">2</a>
-                </div>
-                <div class="item">
-                    <a href="">3</a>
-                </div>
-                <div class="item">
-                    <a href="">4</a>
-                </div>
-            </div><br>            
-            
-            <!--dang bai-->
-            <h3>Bạn có muốn đăng bài không?</h3>
-            <a href="blog.html">
-                <button> Let's go </button>  
-            </a>
-            
-            
-        </div>
+            </div>
+        </div> 
+    </div>    
+        
     
-        <!--footer-->
-        <div id="footer">
-            <div class="box">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="">
-                </div>
-                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+<!--footer-->
+<div class="footer container-fluid" style="background: rgba(0, 0, 0, 0.79); padding: 20px;">
+    <div class="row">
+        <div class="col-5"  >
+            <h3>NỘI DUNG</h3>
+            <div class="menu list-group-flush">
+                <a href="index.php" class="list-group-item list-group-item-action">Trang chủ</a>
+                <a href="main/img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="main/blog.php" class="list-group-item list-group-item-action">Blog</a>
+                <a href="main/lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
+                <a href="main/calo.php" class="list-group-item list-group-item-action">Tính calo</a>
+                <a href="main/congthuc.php" class="list-group-item list-group-item-action">Công thức nấu ăn</a>
             </div>
-            <div class="box">
-                <h3>NỘI DUNG</h3>
-                <ul class="quick-menu">
-                    <div class="item">
-                        <a href="">Trang chủ</a>
-                    </div>
-                    <div class="item">
-                        <a href="">Sản phẩm</a>
-                    </div>
-                    <div class="item">
-                        <a href="">Blog</a>
-                    </div>
-                    <div class="item">
-                        <a href="">Liên hệ</a>
-                    </div>
-                    <div class="item">
-                        <a href="">Tính calo</a>
-                    </div>
-                    <div class="item"> 
-                        <a href=""> Công thức nấu ăn</a>
-                    </div>
-                </ul>
-            </div>
-            <div class="box">
-                <h3>LIÊN HỆ</h3>
-                <form action="">
-                    <input type="text" placeholder="Địa chỉ email">
-                    <button>Nhận tin</button>
-                </form>
-            </div>
-            </div>
-            </div>
-            <!-- Thêm vào cuối tệp index.html -->
-            <div id="chatbot-circle" onclick="toggleChat()">
-            <p> 
-            <i class="fa-solid fa-robot"></i>
-            </p>
-            </div>
-            
-            <div id="chatbot-interface" style="display: none;">
-            <div id="chatbot-messages"></div>
-            <input id="chatbot-input" type="text" placeholder="Type your message here" />
-            </div>
-            
-            <script>
-            function toggleChat() {
-            var chatInterface = document.getElementById('chatbot-interface');
-            if (chatInterface.style.display === "none") {
-            chatInterface.style.display = "block";
-            } 
-            else {
-            chatInterface.style.display = "none";
-            }
-            }
-            </script>
+        </div> 
+        <div class="col-7" >
+        <h3>LIÊN HỆ</h3>
+        <form action="">
+            <input class="border-none" type="text" placeholder="Địa chỉ email"  style="background: transparent; cursor: text;">
+            <button class="border-none">Nhận tin</button>
+        </form>
+        </div>
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <p class="text-secondary ">Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+    </div>
+</div>
+
+    <!-- Thêm vào cuối tệp index.html -->
+    <div id="chatbot-circle" onclick="toggleChat()">
+    <p> 
+    <i class="fa-solid fa-robot"></i>
+    </p>
+    </div>
+    
+    <div id="chatbot-interface" style="display: none;">
+    <div id="chatbot-messages"></div>
+    <input id="chatbot-input" type="text" placeholder="Type your message here" />
+    </div>
+    
+    <script>
+    function toggleChat() {
+    var chatInterface = document.getElementById('chatbot-interface');
+    if (chatInterface.style.display === "none") {
+    chatInterface.style.display = "block";
+    } 
+    else {
+    chatInterface.style.display = "none";
+    }
+    }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var favoriteButton = document.querySelector(".favorite-button");
+            favoriteButton.addEventListener("click", function() {
+                if (favoriteButton.classList.contains("clicked")) {
+                    favoriteButton.classList.remove("clicked");
+                } else {
+                    favoriteButton.classList.add("clicked");
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            var likeButton = document.querySelector(".favorite-button");
+            var likeCountSpan = document.getElementById("like-count");
+            var likeCount = parseInt(likeCountSpan.textContent);
+        
+            likeButton.addEventListener("click", function() {
+                if (likeButton.classList.contains("liked")) {
+                    likeCount--;
+                    likeButton.classList.remove("liked");
+                } else {
+                    likeCount++;
+                    likeButton.classList.add("liked");
+                }
+                likeCountSpan.textContent = likeCount;
+            });
+        });
+    </script>
 
 </body>
 </html>
