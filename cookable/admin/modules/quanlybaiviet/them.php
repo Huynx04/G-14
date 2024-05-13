@@ -1,22 +1,11 @@
-<p> thêm sản phẩm </p>
+<p> thêm bài viết </p>
 <table border="1" width="80" style="border-collapse:collapse;" >
-<form method="post" action="modules/quanlysp/xuly.php" enctype="multipart/form-data"> 
+<form method="post" action="modules/quanlybaiviet/xuly.php" enctype="multipart/form-data"> 
 <tr>
-    <td>Tên sản phẩm</td>
-    <td><input type="text" name="tensanpham"></td>
+    <td>Tên bài viết</td>
+    <td><input type="text" name="tenbaiviet"></td>
   </tr>
-  <tr>
-    <td>mã sp</td>
-    <td><input type="text" name="masp"></td>
-  </tr>
-  <tr>
-    <td>giá sp</td>
-    <td><input type="text" name="giasp"></td>
-  </tr> 
-  <tr>
-    <td>số lượng</td>
-    <td><input type="text" name="soluong"></td>
-  </tr>
+
   <tr>
     <td>hình ảnh</td>
     <td><input type="file" name="hinhanh"></td>
@@ -30,15 +19,15 @@
     <td><textarea rows="10" cols="100" name="noidung"></textarea></td>
   </tr>
   <tr>
-    <td>danh mục sản phẩm</td>
+    <td>danh mục bài viết</td>
     <td>
       <select name="danhmuc" >
         <?php
-        $sql_danhmuc="SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+        $sql_danhmuc="SELECT * FROM tbl_danhmucbaiviet ORDER BY id_baiviet DESC";
         $query_danhmuc= mysqli_query($mysqli,$sql_danhmuc);
         while($row_danhmuc=mysqli_fetch_array($query_danhmuc)){
         ?>
-        <option value="<?php echo $row_danhmuc['id_danhmuc'] ?>" ><?php echo $row_danhmuc['tendanhmuc'] ?> </option>
+        <option value="<?php echo $row_danhmuc['id_baiviet'] ?>" ><?php echo $row_danhmuc['tendanhmuc_baiviet'] ?> </option>
         <?php
         }
         ?>
@@ -55,7 +44,7 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2"> <input type="submit" name="themsanpham" value="Thêm sản phẩm"></td>
+    <td colspan="2"> <input type="submit" name="thembaiviet" value="Thêm bài viết"></td>
   </tr>
 </form>  
   
