@@ -13,6 +13,23 @@ body{
     width:90%;
     margin:0 auto;
 }
+.hinhanh_sanpham{
+    float: left;
+    width: 30%;
+}
+.chitiet_sanpham{
+    float: left;
+    width: 49%;
+    margin:0 10px;
+}
+input.themgiohang{
+    border: none;
+    background: brown;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
 .header{
     background-image: url("../imgs/banner.jpg"); 
     background-repeat: no-repeat;
