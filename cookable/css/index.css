@@ -492,19 +492,19 @@ section{
 }
 
 .swiper-slide:nth-child(1n){
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(images/1.jpg) no-repeat 50% 50% / cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(../imgs/1.jpg) no-repeat 50% 50% / cover;
 }
 .swiper-slide:nth-child(2n){
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(https://w4s8p5t8.rocketcdn.me/wp-content/uploads/2019/01/vegan-milk-chocolate-recipe.jpg) no-repeat 50% 50% / cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(../imgs/2.png) no-repeat 50% 50% / cover;
 }
 .swiper-slide:nth-child(3n){
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(images/3.jpg) no-repeat 50% 50% / cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(../imgs/3.jpg) no-repeat 50% 50% / cover;
 }
 .swiper-slide:nth-child(4n){
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(images/4.jpg) no-repeat 50% 50% / cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(../imgs/4.jpg) no-repeat 50% 50% / cover;
 }
 .swiper-slide:nth-child(5n){
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(images/5.jpg) no-repeat 50% 50% / cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(../imgs/5.jpg) no-repeat 50% 50% / cover;
 
 }
 
