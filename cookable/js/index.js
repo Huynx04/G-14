@@ -6,6 +6,6 @@ let swiper = new Swiper(".swiper", {
     loop:true,
     rotate:true,
     mousewheels:{
-        invert:false,
+    invert:false,
 }
 })
