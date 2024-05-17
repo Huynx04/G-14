@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="chatbot.js" defer></script>
 </head>
 <body>
 
@@ -25,7 +29,7 @@
                 <div class="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Trang chủ</a>
+                            <a class="nav-link" href="../index.html">Trang chủ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="img4.html">Sản phẩm</a>
@@ -114,7 +118,7 @@
         <div class="col-5"  >
             <h3>NỘI DUNG</h3>
             <div class="menu list-group-flush">
-                <a href="index.html" class="list-group-item list-group-item-action">Trang chủ</a>
+                <a href="../index.html" class="list-group-item list-group-item-action">Trang chủ</a>
                 <a href="img4.html" class="list-group-item list-group-item-action">Sản phẩm</a>
                 <a href="blog.html" class="list-group-item list-group-item-action">Blog</a>
                 <a href="lienhe.html" class="list-group-item list-group-item-action">Liên hệ</a>
@@ -135,30 +139,27 @@
         <p class="text-secondary ">Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
     </div>
 </div>
-
     <!-- Thêm vào cuối tệp index.html -->
-    <div id="chatbot-circle" onclick="toggleChat()">
-    <p> 
-    <i class="fa-solid fa-robot"></i>
-    </p>
-    </div>
-    
-    <div id="chatbot-interface" style="display: none;">
-    <div id="chatbot-messages"></div>
-    <input id="chatbot-input" type="text" placeholder="Type your message here" />
-    </div>
-    
-    <script>
-    function toggleChat() {
-    var chatInterface = document.getElementById('chatbot-interface');
-    if (chatInterface.style.display === "none") {
-    chatInterface.style.display = "block";
-    } 
-    else {
-    chatInterface.style.display = "none";
-    }
-    }
-    </script>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2 style="color:aliceblue; margin-top: 4px;">ChatBot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Xin chào,<br>Bạn cần gì?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Nhập..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
 
 </body>
 </html>
