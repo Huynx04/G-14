@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/bstrap.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="chatbot.js" defer></script>
 </head>
 <body>
 
@@ -16,7 +20,7 @@
     <nav class="header navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
         <div class="container-fluid">
             <div class="logo0 col-1  ">
-                <a class="navbar-brand fa-solid fa-truck-fast" href="main/user.php"></a>
+                <a class="navbar-brand fa-solid fa-truck-fast" href="user.php"></a>
             </div>
             <div class="logo1 col-7 pa-y-2 " > 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -25,29 +29,29 @@
                 <div class="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.php">Trang chủ</a>
+                            <a class="nav-link " href="../index.php">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="main/img4.php">Sản phẩm</a>
+                            <a class="nav-link" href="img4.php">Sản phẩm</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="main/lienhe.php">Liên hệ</a>
+                            <a class="nav-link" href="lienhe.php">Liên hệ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled active" href="main/calo.php">Tính Calo</a>
+                            <a class="nav-link disabled active" href="calo.php">Tính Calo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="main/congthuc.php">Công thức nấu ăn</a>
+                            <a class="nav-link" href="congthuc.php">Công thức nấu ăn</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="logo2 col-1">
-                <a class="navbar-brand fa-solid fa-user " href="main/user.php"></a>
-                <a class="navbar-brand fa-solid fa-cart-shopping" href="main/cart.php"></a>
+                <a class="navbar-brand fa-solid fa-user " href="user.php"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="cart.php"></a>
             </div>
         </div>
     </nav>
@@ -61,7 +65,7 @@
             <p>Hãy là một thành viên của Cookable để được hưởng nhiều ưu đãi.</p>
             <p>Bạn đã là thành viên chưa?</p>
             <p>Hãy đăng nhập nếu bạn đã có tài khoản!</p>
-        <a href="main/user_login.php">
+        <a href="user_login.php">
             <button> Đăng nhập </button>   
         </a>
         </div>
@@ -71,7 +75,7 @@
             <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
         </div>
         <div class="to-bottom">
-            <a href="main/banner.php">
+            <a href="banner.php">
                 <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
             </a>
         </div>
@@ -255,7 +259,7 @@
                 <h3>BỮA TỐI</h3>
                 <ul id="list-post">
                     <div class="item">
-                    <a href="main/blog_post.php">
+                    <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/564x/76/02/ad/7602ad62dc00890419658642f0aa462c.jpg" alt="Gỏi cuốn tôm thịt bổ dưỡng">
                         </div>
@@ -264,7 +268,7 @@
                     </a>
                     </div>
                     <div class="item">
-                    <a href="main/blog_post.php">
+                    <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/736x/32/57/d1/3257d17b16ec0e7a938eb9a26f22280c.jpg" alt="Mỳ trộn rau củ - Màu sắc của tự nhiên">
                         </div>
@@ -273,7 +277,7 @@
                     </a>
                     </div>               
                      <div class="item">
-                     <a href="main/blog_post.php">
+                     <a href="blog_post.php">
                         <div class="image-container">
                         <img src="https://i.pinimg.com/564x/0b/36/34/0b3634ddd6673d964800c82f52435724.jpg" alt="Canh sườn non ngũ sắc - Ngọt từ xương"></div>
                         <div class="name">Canh sườn non ngũ sắc - Ngọt từ xương</div>
@@ -281,7 +285,7 @@
                     </a>
                     </div>
                     <div class="item">
-                    <a href="main/blog_post.php">
+                    <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/564x/39/a6/e6/39a6e6898547e7ab32b7070c7b0818b3.jpg" alt="Cơm cuộn gạo lức - Amazing">
                         </div>
@@ -307,7 +311,7 @@
                 <!--Slideshow-->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                  <a href="main/blog_post.php">
+                  <a href="blog_post.php">
                     <img src="https://images.sbs.com.au/dims4/default/f49acbc/2147483647/strip/true/crop/2666x1500+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Ff3%2F77%2F052b387c4d7a97b9430548a7ef2b%2Frx49-recipe-rodneydunn-greensandcrabsalad-creditjiwonkim-tcus6-2.jpg" alt="Blog" class="d-block" style="width:100%">
                     <div class="carou-cap">
                         <h3>Bạn có một công thức ngon tuyệt?</h3>
@@ -316,7 +320,7 @@
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="main/img4.php"> <!--them link toi san pham-->
+                    <a href="img4.php"> <!--them link toi san pham-->
                     <img src="https://sushishop.com/wp-content/uploads/2019/06/home.jpg" alt="Sản phẩm" class="d-block" style="width:100%">
                     <div class="carou-cap">
                         <h3>Bạn đói, bạn muốn mua thức ăn?</h3>
@@ -325,7 +329,7 @@
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="main/congthuc.php">
+                    <a href="congthuc.php">
                     <img src="https://images.sbs.com.au/dims4/default/c350cfa/2147483647/strip/true/crop/1500x844+0+65/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fdrupal%2Ffood%2Fpublic%2Fchocotorta-chocolate-cake.jpg" alt="Công thức" class="d-block" style="width:100%">
                     <div class="carou-cap">
                         <h3>Bạn muốn tự mình vào bếp!<h3>
@@ -358,12 +362,12 @@
         <div class="col-5"  >
             <h3>NỘI DUNG</h3>
             <div class="menu list-group-flush">
-                <a href="index.php" class="list-group-item list-group-item-action">Trang chủ</a>
-                <a href="main/img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
-                <a href="main/blog.php" class="list-group-item list-group-item-action">Blog</a>
-                <a href="main/lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
-                <a href="main/calo.php" class="list-group-item list-group-item-action">Tính calo</a>
-                <a href="main/congthuc.php" class="list-group-item list-group-item-action">Công thức nấu ăn</a>
+                <a href="../index.php" class="list-group-item list-group-item-action">Trang chủ</a>
+                <a href="img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="blog.php" class="list-group-item list-group-item-action">Blog</a>
+                <a href="lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
+                <a href="calo.php" class="list-group-item list-group-item-action">Tính calo</a>
+                <a href="congthuc.php" class="list-group-item list-group-item-action">Công thức nấu ăn</a>
             </div>
         </div> 
         <div class="col-7" >
@@ -381,28 +385,26 @@
 </div>
 
     <!-- Thêm vào cuối tệp index.html -->
-    <div id="chatbot-circle" onclick="toggleChat()">
-    <p> 
-    <i class="fa-solid fa-robot"></i>
-    </p>
-    </div>
-    
-    <div id="chatbot-interface" style="display: none;">
-    <div id="chatbot-messages"></div>
-    <input id="chatbot-input" type="text" placeholder="Type your message here" />
-    </div>
-    
-    <script>
-    function toggleChat() {
-    var chatInterface = document.getElementById('chatbot-interface');
-    if (chatInterface.style.display === "none") {
-    chatInterface.style.display = "block";
-    } 
-    else {
-    chatInterface.style.display = "none";
-    }
-    }
-    </script>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2 style="color:aliceblue; margin-top: 4px;">ChatBot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Xin chào,<br>Bạn cần gì?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Nhập..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
 
 </body>
 </html>
