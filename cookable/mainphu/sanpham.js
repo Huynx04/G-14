@@ -2,10 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let iconCart = document.querySelector('.navbar-brand2');
     let cartCount = iconCart.querySelector('span');
     let body = document.querySelector('body');
+    let closeCart = document.querySelector('.close');
 
-    // Toggle cart visibility
     iconCart.addEventListener('click', (event) => {
         event.preventDefault();
+        body.classList.toggle('showCart');
+    });
+
+    closeCart.addEventListener('click', (event) => {
         body.classList.toggle('showCart');
     });
 
@@ -19,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let productName = productItem.querySelector('.title_product').textContent;
             let productPrice = productItem.querySelector('.price_product').textContent;
             addToCart(productImage, productName, productPrice);
-            updateCartCount();
         });
     });
 
@@ -34,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let quantityElement = item.querySelector('.quantity span:nth-child(2)');
                 quantityElement.textContent = parseInt(quantityElement.textContent) + 1;
                 isProductInCart = true;
+                updateCartCount(1);
             }
         });
 
@@ -61,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             newItem.querySelector('.plus').addEventListener('click', (event) => {
                 let quantityElement = event.target.previousElementSibling;
                 quantityElement.textContent = parseInt(quantityElement.textContent) + 1;
+                updateCartCount(1);
             });
 
             newItem.querySelector('.minus').addEventListener('click', (event) => {
@@ -68,15 +73,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 let currentQuantity = parseInt(quantityElement.textContent);
                 if (currentQuantity > 1) {
                     quantityElement.textContent = currentQuantity - 1;
+                    updateCartCount(-1);
+                } else if (currentQuantity === 1) {
+                    // Remove the item if the quantity is 0
+                    event.target.closest('.item').remove();
+                    updateCartCount(-1);
                 }
             });
 
             cartList.appendChild(newItem);
+            updateCartCount(1);
         }
     }
 
-    function updateCartCount() {
+    function updateCartCount(change) {
         let currentCount = parseInt(cartCount.textContent);
-        cartCount.textContent = currentCount + 1;
+        cartCount.textContent = currentCount + change;
     }
 });
