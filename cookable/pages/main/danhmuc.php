@@ -1,3 +1,4 @@
+<body class="showCart">
 <?php
 $sql_pro = "SELECT * FROM tbl_sanpham WHERE tbl_sanpham.id_danhmuc='$_GET[id]' ORDER BY id_sanpham DESC";
 $query_pro = mysqli_query($mysqli, $sql_pro);
@@ -5,8 +6,8 @@ $sql_cate = "SELECT * FROM tbl_danhmuc WHERE tbl_danhmuc.id_danhmuc='$_GET[id]' 
 $query_cate = mysqli_query($mysqli, $sql_cate);
 $row_title = mysqli_fetch_array($query_cate);
 ?>
-<div class="container-fluid">
-<h3>Danh mục món ăn: <?php echo $row_title['tendanhmuc'] ?> </h3>
+
+<h3 style="margin-top: 6%; margin-bottom: 9%; text-align: center; font-size:45px">Danh mục món ăn: <?php echo $row_title['tendanhmuc'] ?> </h3>
 <ul class="product_list">
     <?php
     while ($row_pro = mysqli_fetch_array($query_pro)) {
@@ -17,9 +18,37 @@ $row_title = mysqli_fetch_array($query_cate);
                 <p class="title_product text_edit1"> <?php echo $row_pro['tensanpham'] ?></p>
                 <p class="price_product text_edit1"><?php echo number_format($row_pro['giasp'], 0, ',', '.') . 'vnđ' ?></p>
             </a>
+            <button class="addCart">
+                 Mua
+            </button>
         </li>
     <?php
     }
     ?>
 </ul>
-</div>
+
+<div class="cartTab">
+                  <h1>giỏ hàng</h1>
+                  <div class="listCart">
+                     <div class="item">
+                        <div class="image">
+                        </div>
+                        <div class="name">
+                        </div>
+                        <div class="totalPrice">
+                        </div>
+                        <div class="quantity">
+                          
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="btn">
+                     <button class="close"> Đóng </button>
+                     <button class="Check"> Tính tiền </button>
+
+                  </div>
+               </div>
+       <script src="sanpham.js"></script>
+
+</body>
