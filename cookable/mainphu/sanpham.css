@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
 *{
     padding:0;
     margin:0;
@@ -7,20 +7,31 @@
     font-family:'Poppins', sans-serif;
     cursor: pointer;
 }
+
+
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+
 .header {
    
-    width: 100%;
-    padding:30px 0px;
-    margin-top:0px;
-    display: flex ;
-    justify-content:space-around;
-    align-items: center;
-    background: linear-gradient(to left ,#17b176, #f42424 ) ;  
+        width: 100%;
+        padding:30px 0px;
+        margin-top:0px;
+        display: flex ;
+        justify-content:space-around;
+        align-items: center;
+        background: linear-gradient(to left ,#17b176, #f42424 ) ;  
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+    
+    
 
-}
-
-
-.logo0{
+}.logo0{
     padding-left: 3%;
 }
 
@@ -31,40 +42,39 @@
 .logo2 {
     padding-right:0px;
 }
-
-.navbar-brand{
+.navbar-brand {
     color:rgb(60, 54, 243);
 }
 
-.navbar-brand:hover {
+
+.navbar-brand, .navbar-brand1, .navbar-brand2:hover {
     color: rgb(12, 8, 126);
 }
 
-.banner h2 {
-    text-align: center;
-    margin-bottom: 76px;
-    font-size:32px;
+.navbar-brand2 span {
+    margin-top: 0.1%;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%; 
+    font-size: 18px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+h1 {
+    font-size:52px;
     color:#626a67;
     font-weight: bold;
-}
-h3 {
     text-align: center;
-    font-size:400%;
-    color:#626a67;
-
 }
-h4 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size:24px;
-    color: orange;
-    transition:0.4s;
-}
+/* 
 .banner {
     width: 100%;
     background-image :url("https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/banner.png?raw=true");
     height: 463px;
-    margin-top:0px;
+    margin-top:100px;
     display: flex;
     padding:0px 133px;
     position :relative ; 
@@ -158,7 +168,92 @@ h4 {
 
 .banner .to-bottom a img:hover{
     padding:2px; 
+} */
+
+
+/* autocom */
+.wrapper{
+    margin: auto; 
 }
+
+
+/* search automation */
+
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+  
+  .wrapper{
+    max-width: 450px;
+    margin: 150px auto;
+  }
+  
+  .wrapper .search-input{
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+  }
 
 /* Sidebar Styles */
 .sidebar {
@@ -177,6 +272,7 @@ h4 {
 
 .sidebar ul li {
     margin-bottom: 10px;
+
 }
 
 .sidebar ul li a {
@@ -213,6 +309,13 @@ h4 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    transition: transform .5s;
+   
+
+}
+
+ .showCart .product_list{
+    transform: translateX(-35%);
 }
 
 .product_list li {
@@ -245,12 +348,33 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 30%;
     height: 20%;
+
 }
 
 .product_list .product_items:hover{
     box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.product_list .product_items button{
+    background-color: #1d1a1a;
+    color: #eee;
+    padding: 5px 10px; 
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 10px; 
+    border: none; 
+    cursor: pointer;
+    width: 60%; 
+    transition: width 0.5s;
+
+}
+
+
+.product_list .product_items button:hover{
+    background-color: #007bff;
+    width: 50%; 
+
+}
 
 .product_list .product_items p{
     color: black;
@@ -304,11 +428,90 @@ h4 {
     border: 1px solid #ccc;
 }
 
+
+/* gio hang */
+.cartTab{
+    width: 400px; 
+    background-color: #1d1a1a;
+    color: #ffff ; 
+    position: fixed; 
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    margin-top: 90px; 
+    padding-top: 40px;
+    transition: .5s;
+
+}
+
+.showCart .cartTab{
+    inset: 0 0 0 auto; 
+}
+
+
+
+.cartTab h1{
+    font-weight: 300;
+    color: white;
+}
+
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button{
+    background-color: #e8bc0e;
+    border: none; 
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .btn .close{
+    background-color: #ffffffcd;
+}
+
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow:auto;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     #main {
         flex-direction: column;
     }
+        
+   
+
 
     .sidebar {
         margin-bottom: 20px;
@@ -328,6 +531,7 @@ h4 {
         
     .sidebar ul   {
         width: 100%;
+        padding-top: 140px;
 }
     .sidebar ul li a{
         padding-left: 20px;
@@ -336,7 +540,11 @@ h4 {
 
 }
 
-
+@media (max-width: 1126px) {
+    .maincontent h1{
+        padding-top: 100px;
+    }
+}
 
 /*footer*/
 .footer {
