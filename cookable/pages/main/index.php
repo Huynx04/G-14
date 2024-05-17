@@ -5,18 +5,29 @@ $query_pro = mysqli_query($mysqli, $sql_pro);
 ?>
          
 
-               <h1 style="margin-top: 6%; margin-bottom: 9%; text-align: center; font-size:45px">Sản phẩm mới nhất</h1>
+               <h1 style="margin-top: 13%; margin-bottom: 5%; text-align: center; font-size:45px">Sản phẩm mới nhất</h1>
+              
+               <!-- search -->
                <div class="wrapper">
                     <div class="search-input">
-                      <a href="" target="_blank" hidden></a>
-                      <input type="text" placeholder="Bạn muốn ăn...">
+                      <input type="text" placeholder="Bạn muốn ăn..">
                       <div class="autocom-box">
-                        <!-- here list are inserted from javascript -->
+                        <li>Mì trộn trứng</li>
+                        <li>Mì trộn trứng xúc xích</li>
+                        <li>Mì trộn sốt bơ tỏi</li>
+                        <li>Hamburger bò</li>
+                        <li>Hamburger gà</li>
+                        <li>Bánh mì</li>
+                        <li>Bánh bao khoai môn</li>
+                        <li>Kem việt quất</li>
                       </div>
                       <div class="icon"><i class="fas fa-search"></i></div>
                     </div>
-                </div>
-                  <script src="../../js/suggestion.js"></script>
+                  </div>
+                  <script src="../js/suggestions.js"></script>
+                  <script src="../js/img4.js"></script>
+                <!-- end search -->
+
                <ul class="product_list">
                 <?php
                 while ($row = mysqli_fetch_assoc($query_pro)){
