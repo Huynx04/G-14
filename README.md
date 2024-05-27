@@ -72,3 +72,7 @@ Version Control: Git, GitHub
 If you have any questions or need further assistance, please feel free to contact us:
 Facebook: [Cookable WithEase](https://www.facebook.com/profile.php?id=61560046265826)
 Instagram: Cookable CookWithEase
+
+## Sơ đồ web
+
+![web](https://github.com/Huynx04/G-14/blob/main/s%C6%A1%20%C4%91%E1%BB%93%20web/s%C6%A1%20%C4%91%E1%BB%93%20web-nh%C3%B3m%2014.png?raw=true)
