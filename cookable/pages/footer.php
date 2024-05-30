@@ -4,7 +4,7 @@
             <h3>NỘI DUNG</h3>
             <div class="menu list-group-flush">
                 <a href="index.php" class="list-group-item list-group-item-action">Trang chủ</a>
-                <a href="main/img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="mainphu/sanpham.php" class="list-group-item list-group-item-action">Sản phẩm</a>
                 <a href="main/blog.php" class="list-group-item list-group-item-action">Blog</a>
                 <a href="main/lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
                 <a href="main/calo.php" class="list-group-item list-group-item-action">Tính calo</a>
@@ -24,3 +24,4 @@
         <p class="text-secondary ">Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
     </div>  
 </div>
+
