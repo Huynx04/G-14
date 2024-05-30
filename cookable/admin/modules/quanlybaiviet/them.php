@@ -1,5 +1,5 @@
 <p> thêm bài viết </p>
-<table border="1" width="80" style="border-collapse:collapse;" >
+<table class="them"  border="1" width="80" style="border-collapse:collapse;" >
 <form method="post" action="modules/quanlybaiviet/xuly.php" enctype="multipart/form-data"> 
 <tr>
     <td>Tên bài viết</td>

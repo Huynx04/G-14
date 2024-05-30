@@ -3,7 +3,7 @@
     $query_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
 ?>
 <p>liệt kê</p>
-<table style="width: 100%" border="1" style="border-collapse:collapse;" >
+<table class="lietke" style="width: 100%" border="1" style="border-collapse:collapse;" >
 
     <tr>
         <th>ID</th>

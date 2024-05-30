@@ -3,7 +3,7 @@
     $query_lietke_danhmucbv = mysqli_query($mysqli, $sql_lietke_danhmucbv);
 ?>
 <p>liệt kê danh mục bài viết</p>
-<table style="width: 100%" border="1" style="border-collapse:collapse;" >
+<table class="lietke" style="width: 100%" border="1" style="border-collapse:collapse;" >
 
     <tr>
         <th>ID</th>

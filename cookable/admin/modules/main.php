@@ -42,6 +42,14 @@
         {
             include("modules/quanlybaiviet/sua.php") ;
         }
+        elseif ($tam== 'quanlydonhang' && $query== 'lietke')
+        {
+            include("modules/quanlydonhang/lietke.php") ;
+        }
+        elseif ($tam== 'donhang' && $query== 'xemdonhang')
+        {
+            include("modules/quanlydonhang/xemdonhang.php") ;
+        }
         else {
             include("modules/dashboard.php") ;
         }

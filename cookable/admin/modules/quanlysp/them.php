@@ -1,5 +1,5 @@
 <p> thêm sản phẩm </p>
-<table border="1" width="80" style="border-collapse:collapse;" >
+<table class="them" border="1" width="80" style="border-collapse:collapse;" >
 <form method="post" action="modules/quanlysp/xuly.php" enctype="multipart/form-data"> 
 <tr>
     <td>Tên sản phẩm</td>
