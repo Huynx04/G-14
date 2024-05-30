@@ -9,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/bstrap.css">
-    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <script src="chatbot.js" defer></script>
+    <link rel="shortcut icon" type="image/jpg" href="../imgs/icon.jpg"/>
+    <script src="../js/chatbot.js" defer></script>
 </head>
 <body>
 
@@ -33,7 +34,7 @@
                             <a class="nav-link " href="../index.php">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="img4.php">Sản phẩm</a>
+                            <a class="nav-link" href="../mainphu/sanpham.php">Sản phẩm</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="blog.php">Blog</a>
@@ -52,7 +53,7 @@
             </div>
             <div class="logo2 col-1">
                 <a class="navbar-brand fa-solid fa-user " href="user.php"></a>
-                <a class="navbar-brand fa-solid fa-cart-shopping" href="cart.php"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="../mainphu/pages/main/giohang.php"></a>
             </div>
         </div>
     </nav>
@@ -61,11 +62,11 @@
     <div class="banner container-fluid">
         <div class="col-xxl-7 box-left">
             <h2>
-                <span>DIỄN ĐÀN - BÀI VIẾT</span>
+                <span>LIÊN HỆ</span>
             </h2>
             <p>Nơi sẻ chia công thức và kinh nghiệm tâm đắc của bạn</p>
             <p>Học hỏi các bí quyết tuyệt vời của người khác</p>
-            <a href="blog_post.php">
+            <a href="blog.php">
             <button> Đăng bài </button>
             </a>
         </div>
@@ -126,7 +127,7 @@
                 <!--Slideshow-->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                  <a href="main/blog.php">
+                  <a href="blog.php">
                     <img src="https://images.sbs.com.au/dims4/default/f49acbc/2147483647/strip/true/crop/2666x1500+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Ff3%2F77%2F052b387c4d7a97b9430548a7ef2b%2Frx49-recipe-rodneydunn-greensandcrabsalad-creditjiwonkim-tcus6-2.jpg" alt="Blog" class="d-block" style="width:100%">
                     <div class="carou-cap">
                         <h3>Bạn có một công thức ngon tuyệt?</h3>
@@ -135,7 +136,7 @@
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="main/img4.php"> <!--them link toi san pham-->
+                    <a href="../mainphu/sanpham.php"> <!--them link toi san pham-->
                     <img src="https://sushishop.com/wp-content/uploads/2019/06/home.jpg" alt="Sản phẩm" class="d-block" style="width:100%">
                     <div class="carou-cap">
                         <h3>Bạn đói, bạn muốn mua thức ăn?</h3>
@@ -144,7 +145,7 @@
                     </a>
                   </div>
                   <div class="carousel-item">
-                  <a href="main/congthuc.php">
+                  <a href="congthuc.php">
                     <img src="https://images.sbs.com.au/dims4/default/c350cfa/2147483647/strip/true/crop/1500x844+0+65/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fdrupal%2Ffood%2Fpublic%2Fchocotorta-chocolate-cake.jpg" alt="Công thức" class="d-block" style="width:100%">
                     <div class="carou-cap">
                         <h3>Bạn muốn tự mình vào bếp!<h3>
@@ -178,7 +179,7 @@
             <h3>NỘI DUNG</h3>
             <div class="menu list-group-flush">
                 <a href="../index.php" class="list-group-item list-group-item-action">Trang chủ</a>
-                <a href="img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="../mainphu/sanpham.php" class="list-group-item list-group-item-action">Sản phẩm</a>
                 <a href="blog.php" class="list-group-item list-group-item-action">Blog</a>
                 <a href="lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
                 <a href="calo.php" class="list-group-item list-group-item-action">Tính calo</a>
@@ -206,7 +207,7 @@
       </button>
       <div class="chatbot">
         <header>
-          <h2 style="color:aliceblue; margin-top: 4px;">ChatBot</h2>
+          <h2 style="color:aliceblue; margin-top: 4px; margin-bottom: 8px">ChatBot</h2>
           <span class="close-btn material-symbols-outlined">close</span>
         </header>
         <ul class="chatbox">
