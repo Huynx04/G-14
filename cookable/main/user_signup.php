@@ -9,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/user.css">
-    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <script src="chatbot.js" defer></script>
+    <link rel="shortcut icon" type="image/jpg" href="../imgs/icon.jpg"/>
+    <script src="../js/chatbot.js" defer></script>
 </head>
 <body>
 
@@ -31,7 +32,7 @@
                             <a class="nav-link " href="../index.php">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="img4.php">Sản phẩm</a>
+                            <a class="nav-link" href="../mainphu/sanpham.php">Sản phẩm</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="blog.php">Blog</a>
@@ -50,7 +51,7 @@
             </div>
             <div class="logo2 col-1">
                 <a class="navbar-brand fa-solid fa-user " href="user.php"></a>
-                <a class="navbar-brand fa-solid fa-cart-shopping" href="cart.php"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="../mainphu/pages/main/giohang.php"></a>
             </div>
         </div>
     </nav>
@@ -64,7 +65,7 @@
             <p>Bỗng nhiên bạn nhớ lại mật khẩu đã quên!</p>
             <p>Bạn không cần đổi mật khẩu nữa!</p>
             <p>Hãy đăng nhập ngay!</p>
-        <a href="modules/user_login.php">
+        <a href="../mainphu/pages/main/dangnhap.php">
             <button> Đăng nhập </button>   
         </a>
         </div>
@@ -74,7 +75,7 @@
             <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
         </div>
         <div class="to-bottom">
-            <a href="banner.html">
+            <a href="banner.php">
                 <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
             </a>
         </div>
@@ -113,7 +114,7 @@
             
             <!--dang nhap-->
             <h3>Bạn đã có tài khoản?</h3>
-            <a href="user_login.html">
+            <a href="../mainphu/pages/main/dangnhap.php">
                 <button> Đăng nhập </button>  
             </a>
         </div>
@@ -130,7 +131,7 @@
             <h3>NỘI DUNG</h3>
             <div class="menu list-group-flush">
                 <a href="../index.php" class="list-group-item list-group-item-action">Trang chủ</a>
-                <a href="img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="../mainphu/sanpham.php" class="list-group-item list-group-item-action">Sản phẩm</a>
                 <a href="blog.php" class="list-group-item list-group-item-action">Blog</a>
                 <a href="lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
                 <a href="calo.php" class="list-group-item list-group-item-action">Tính calo</a>
@@ -158,7 +159,7 @@
       </button>
       <div class="chatbot">
         <header>
-          <h2 style="color:aliceblue; margin-top: 4px;">ChatBot</h2>
+          <h2 style="color:aliceblue; margin-top: 4px; margin-bottom: 8px">ChatBot</h2>
           <span class="close-btn material-symbols-outlined">close</span>
         </header>
         <ul class="chatbox">
