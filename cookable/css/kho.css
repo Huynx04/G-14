@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
 *{
     padding:0;
@@ -6,20 +7,30 @@
     font-family:'Poppins', sans-serif;
     cursor: pointer;
 }
+
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+
 .header {
    
-    width: 100%;
-    padding:30px 0px;
-    margin-top:0px;
-    display: flex ;
-    justify-content:space-around;
-    align-items: center;
-    background: linear-gradient(to left ,#17b176, #f42424 ) ;  
+        width: 100%;
+        padding:30px 0px;
+        margin-top:0px;
+        display: flex ;
+        justify-content:space-around;
+        align-items: center;
+        background: linear-gradient(to left ,#17b176, #f42424 ) ;  
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+    
+    
 
-}
-
-
-.logo0{
+}.logo0{
     padding-left: 3%;
 }
 
@@ -39,31 +50,18 @@
     color: rgb(12, 8, 126);
 }
 
-.banner h2 {
-    text-align: center;
-    margin-bottom: 76px;
+h1 {
     font-size:32px;
     color:#626a67;
     font-weight: bold;
-}
-h3 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size:32px;
-    color:#626a67;
 }
-h4 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size:24px;
-    color: orange;
-    transition:0.4s;
-}
+
 .banner {
     width: 100%;
     background-image :url("https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/banner.png?raw=true");
     height: 463px;
-    margin-top:0px;
+    margin-top:100px;
     display: flex;
     padding:0px 133px;
     position :relative ; 
@@ -158,10 +156,12 @@ h4 {
 .banner .to-bottom a img:hover{
     padding:2px; 
 }
+
+
+
 h1 {
     font-variant: inherit;
     display: block;
-    text-shadow: #f6874b 2px 3px 4px;
     font-size: 1000%;
     text-align: center;
 }
@@ -304,6 +304,7 @@ h2 {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    
 }
 .footer h3 {
     text-align: center;
