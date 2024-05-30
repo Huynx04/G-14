@@ -9,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/bstrap.css">
-    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <script src="chatbot.js" defer></script>
+    <link rel="shortcut icon" type="image/jpg" href="../imgs/icon.jpg"/>
+    <script src="../js/chatbot.js" defer></script>
 </head>
 <body>
 
@@ -32,7 +33,7 @@
                             <a class="nav-link " href="../index.php">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="img4.php">Sản phẩm</a>
+                            <a class="nav-link" href="../mainphu/sanpham.php">Sản phẩm</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="blog.php">Blog</a>
@@ -51,7 +52,7 @@
             </div>
             <div class="logo2 col-1">
                 <a class="navbar-brand fa-solid fa-user " href="user.php"></a>
-                <a class="navbar-brand fa-solid fa-cart-shopping" href="cart.php"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="../mainphu/sanpham.php"></a>
             </div>
         </div>
     </nav>
@@ -62,11 +63,10 @@
             <h2>
                 <span>TÍNH CALO</span>
             </h2>
-            <p>Hãy là một thành viên của Cookable để được hưởng nhiều ưu đãi.</p>
-            <p>Bạn đã là thành viên chưa?</p>
-            <p>Hãy đăng nhập nếu bạn đã có tài khoản!</p>
-        <a href="user_login.php">
-            <button> Đăng nhập </button>   
+            <p>Nơi sẻ chia công thức và kinh nghiệm tâm đắc của bạn</p>
+            <p>Học hỏi các bí quyết tuyệt vời của người khác</p>
+            <a href="blog.php">
+            <button> Đăng bài </button> 
         </a>
         </div>
         <div class="col-xl-5 box-right">
@@ -179,7 +179,7 @@
                 <h3>BỮA SÁNG</h3>
                 <ul id="list-post">
                     <div class="item">
-                        <a href="blog_post.html">
+                        <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/564x/76/02/ad/7602ad62dc00890419658642f0aa462c.jpg" alt="Gỏi cuốn - Tưởng khó nhưng dễ">
                         </div>
@@ -188,7 +188,7 @@
                     </a>
                     </div>
                     <div class="item">
-                        <a href="blog_post.html">
+                        <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/564x/b5/a0/93/b5a0937082208649ad89b5cacc3a2c75.jpg" alt="Salad trái cây healthy">
                         </div>
@@ -197,7 +197,7 @@
                     </a>
                     </div>               
                      <div class="item">
-                        <a href="blog_post.html">
+                        <a href="blog_post.php">
                         <div class="image-container">
                         <img src="https://i.pinimg.com/564x/b6/f4/c9/b6f4c9fa4d279758fe56b987320b8268.jpg" alt="Trứng luộc - Dinh dưỡng và đơn giản"></div>
                         <div class="name">Trứng luộc - Dinh dưỡng và đơn giản</div>
@@ -205,7 +205,7 @@
                     </a>
                     </div>
                     <div class="item">
-                        <a href="blog_post.html">
+                        <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/564x/08/19/cc/0819cc97c3ecc49ea4de5bba067086d5.jpg" alt="Bánh trứng ai cũng thích">
                         </div>
@@ -219,7 +219,7 @@
                 <h3>BỮA TRƯA</h3>
                 <ul id="list-post">
                     <div class="item">   
-                        <a href="blog_post.html">                   
+                        <a href="blog_post.php">                   
                         <div class="image-container">
                             <img src="https://i.pinimg.com/564x/76/02/ad/7602ad62dc00890419658642f0aa462c.jpg" alt="Gỏi cuốn - Nhỏ nhưng có võ">
                         </div>
@@ -228,7 +228,7 @@
                     </a>
                     </div>
                     <div class="item">
-                        <a href="blog_post.html">
+                        <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/736x/32/57/d1/3257d17b16ec0e7a938eb9a26f22280c.jpg" alt="Mỳ ý - Mới lạ và độc đáo">
                         </div>
@@ -237,7 +237,7 @@
                     </a>
                     </div>               
                      <div class="item">
-                        <a href="blog_post.html">
+                        <a href="blog_post.php">
                         <div class="image-container">
                         <img src="https://i.pinimg.com/564x/b6/f4/c9/b6f4c9fa4d279758fe56b987320b8268.jpg" alt="Trứng kho - Hương vị quê hương"></div>
                         <div class="name">Trứng kho - Hương vị quê hương</div>
@@ -245,7 +245,7 @@
                     </a>
                     </div>
                     <div class="item">
-                        <a href="blog_post.html">
+                        <a href="blog_post.php">
                         <div class="image-container">
                             <img src="https://i.pinimg.com/564x/fe/aa/12/feaa12ed0e4195732ebccdb960cee559.jpg" alt="Trứng chiên mix - Đầy đủ năng lượng">
                         </div>
@@ -320,7 +320,7 @@
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="img4.php"> <!--them link toi san pham-->
+                    <a href="../mainphu/sanpham.php"> <!--them link toi san pham-->
                     <img src="https://sushishop.com/wp-content/uploads/2019/06/home.jpg" alt="Sản phẩm" class="d-block" style="width:100%">
                     <div class="carou-cap">
                         <h3>Bạn đói, bạn muốn mua thức ăn?</h3>
@@ -363,7 +363,7 @@
             <h3>NỘI DUNG</h3>
             <div class="menu list-group-flush">
                 <a href="../index.php" class="list-group-item list-group-item-action">Trang chủ</a>
-                <a href="img4.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="../mainphu/sanpham.php" class="list-group-item list-group-item-action">Sản phẩm</a>
                 <a href="blog.php" class="list-group-item list-group-item-action">Blog</a>
                 <a href="lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
                 <a href="calo.php" class="list-group-item list-group-item-action">Tính calo</a>
@@ -391,7 +391,7 @@
       </button>
       <div class="chatbot">
         <header>
-          <h2 style="color:aliceblue; margin-top: 4px;">ChatBot</h2>
+          <h2 style="color:aliceblue; margin-top: 4px; margin-bottom: 8px ">ChatBot</h2>
           <span class="close-btn material-symbols-outlined">close</span>
         </header>
         <ul class="chatbox">
