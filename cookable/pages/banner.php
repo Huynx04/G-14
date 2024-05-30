@@ -2,13 +2,13 @@
  <div class="banner container-fluid">
         <div class="col-sm-7 box-left">
             <h2 >
-                <span>Trang chủ</span>
+                <span>TRANG CHỦ</span>
             </h2>
             <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng,</p>
             <p> hợp vệ sinh đến người dùng,phục vụ người dùng 1 cái
                 hoàn hảo nhất</p>
-            <a href="main/blog_post.php">
-                <button> Đăng bài </button>
+                <a href="main/blog_post.php">
+            <button> Đăng bài </button>
 
             </a>
         </div>
