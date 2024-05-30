@@ -9,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/user.css">
-    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <script src="chatbot.js" defer></script>
+    <link rel="shortcut icon" type="image/jpg" href="../imgs/icon.jpg"/>
+    <script src="../js/chatbot.js" defer></script>
 </head>
 <body>
 
@@ -29,29 +30,29 @@
                 <div class="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Trang chủ</a>
+                            <a class="nav-link" href="../index.php">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="img4.html">Sản phẩm</a>
+                            <a class="nav-link" href="../mainphu/sanpham.php">Sản phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                            <a class="nav-link" href="lienhe.php">Liên hệ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="calo.html">Tính Calo</a>
+                            <a class="nav-link" href="calo.php">Tính Calo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="congthuc.html">Công thức nấu ăn</a>
+                            <a class="nav-link" href="congthuc.php">Công thức nấu ăn</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="logo2 col-1">
                 <a class="navbar-brand fa-solid fa-user " href="#"></a>
-                <a class="navbar-brand fa-solid fa-cart-shopping" href="cart.html"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="../mainphu/pages/main/giohang.php"></a>
             </div>
         </div>
     </nav>
@@ -65,7 +66,7 @@
             <p>Bạn là một thành viên của Cookable với nhiều ưu đãi.</p>
             <p>Bạn muốn đổi mật khẩu để tăng tính bảo mật?</p>
             <p>Đổi mật khẩu ngay thôi!</p>
-        <a href="user_changepass.html">
+        <a href="user_changepass.php">
             <button> Đổi mật khẩu </button> 
         </a> 
         </div>
@@ -75,7 +76,7 @@
             <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/img_3.png?raw=true" alt="">
         </div>
         <div class="to-bottom">
-            <a href="banner.html">
+            <a href="banner.php">
                 <img src="https://github.com/hqteamobi/web_shop_ban_hang/blob/main/assets/to_bottom.png?raw=true" alt="">
             </a>
         </div>
@@ -118,12 +119,12 @@
         <div class="col-5"  >
             <h3>NỘI DUNG</h3>
             <div class="menu list-group-flush">
-                <a href="../index.html" class="list-group-item list-group-item-action">Trang chủ</a>
-                <a href="img4.html" class="list-group-item list-group-item-action">Sản phẩm</a>
-                <a href="blog.html" class="list-group-item list-group-item-action">Blog</a>
-                <a href="lienhe.html" class="list-group-item list-group-item-action">Liên hệ</a>
-                <a href="calo.html" class="list-group-item list-group-item-action">Tính calo</a>
-                <a href="congthuc.html" class="list-group-item list-group-item-action">Công thức nấu ăn</a>
+                <a href="../index.php" class="list-group-item list-group-item-action">Trang chủ</a>
+                <a href="../mainphu/sanpham.php" class="list-group-item list-group-item-action">Sản phẩm</a>
+                <a href="blog.php" class="list-group-item list-group-item-action">Blog</a>
+                <a href="lienhe.php" class="list-group-item list-group-item-action">Liên hệ</a>
+                <a href="calo.php" class="list-group-item list-group-item-action">Tính calo</a>
+                <a href="congthuc.php" class="list-group-item list-group-item-action">Công thức nấu ăn</a>
             </div>
         </div> 
         <div class="col-7" >
@@ -146,7 +147,7 @@
       </button>
       <div class="chatbot">
         <header>
-          <h2 style="color:aliceblue; margin-top: 4px;">ChatBot</h2>
+          <h2 style="color:aliceblue; margin-top: 4px; margin-bottom: 8px">ChatBot</h2>
           <span class="close-btn material-symbols-outlined">close</span>
         </header>
         <ul class="chatbox">
