@@ -6,7 +6,7 @@
                     <p>
                         Nước ép trái cây chứa nhiều đường <span class="nuoc-ep">vì vậy, bạn không nên uống quá nhiều</span>. Các chuyên gia khuyến cáo chỉ nên uống nhiều nhất 3 cốc nước ép trái cây mỗi ngày, lượng vừa đủ giúp làm mát cơ thể, vừa phát huy tác dụng của trái cây.
                     </p>
-                    <a href="main/user_login.php" style="text-decoration: none">
+                    <a href="mainphu/sanpham.php" style="text-decoration: none">
                     <button class="btn">Join</button>
                 </a>
                 </div>
@@ -46,7 +46,7 @@
             </ul>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="../js/index.js"></script>
+        <script src="js/index.js"></script>
 
 
         <div id="saleoff">
@@ -94,4 +94,29 @@
                 
             </div>
         </div>
+
+        <!-- Thêm vào cuối tệp index.html -->
+        <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2 style="color:aliceblue; margin-top: 4px;">ChatBot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Xin chào,<br>Bạn cần gì?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Nhập..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+      <script src="js/chatbot.js" defer></script>
+
+
         
