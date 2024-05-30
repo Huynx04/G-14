@@ -11,7 +11,7 @@
                 <div class="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link disabled active" href="index.php">Trang chủ</a>
+                            <a class="nav-link disabled active" href="../index.php">Trang chủ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mainphu/sanpham.php">Sản phẩm</a>
@@ -20,11 +20,11 @@
                             <a class="nav-link " href="main/blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?quanly=lienhe">Liên hệ</a>
+                            <a class="nav-link" href="main/lienhe.php">Liên hệ</a>
                         </li>
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="main/calo.php">Tính Calo</a>
-                        </li> -->
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link " href="main/congthuc.php">Công thức nấu ăn</a>
                         </li>
@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="logo2 col-1">
-                <a class="navbar-brand fa-solid fa-user " href="main/user.php"></a>
-                <a class="navbar-brand fa-solid fa-cart-shopping" href="index.php?quanly=giohang"></a>
+                <a class="navbar-brand fa-solid fa-user " href="admin/index.php"></a>
+                <a class="navbar-brand fa-solid fa-cart-shopping" href="mainphu/sanpham.php"></a>
             </div>
         </div>
     </nav>
