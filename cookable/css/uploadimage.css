@@ -265,16 +265,16 @@ h4 {
 .blogs h3 {
     font-weight: bold;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-size:30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size:27px;
     color:#626a67;
 }
 
 .blogs p {
     text-align: center;
     margin-bottom: 76px;
-    font-size:24px;
+    font-size:28px;
     color:#626a67;
 }
 
@@ -286,7 +286,9 @@ ul {
 }
 li {
     margin-bottom: 5px;
-    font-size: large;
+    font-size: x-large;
+    font-weight: bold;
+    color:orangered;
 }
 
 .form-container {
@@ -335,6 +337,21 @@ li {
 
 .file-input-wrapper input[type=file] {
     display: none;
+}
+
+.center {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.center img {
+    display: block;
+    width: 80%;
+    object-fit: contain;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -398,14 +415,20 @@ li {
     }
 
     .blogs h3 {
-        font-size: 26px; 
-        margin-top: 40px;
-        margin-bottom: 20px; 
+        font-size: 24px; 
+        margin-top: 0;
+        margin-bottom: 5px; 
     }
 
     .blogs p {
-        font-size: 16px; 
+        font-size: 20px; 
         margin-bottom: 30px; 
+        font-weight: bold;
+    }
+
+    .center {
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 
 }
