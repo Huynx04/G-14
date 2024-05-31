@@ -98,76 +98,139 @@
     </div>
     </form>
     <?php
-        // Hàm dịch từ tiếng Anh sang tiếng Việt bằng Google Translate API
-        function translateText($text) {
-            $apiKey = '';
-            $url = 'https://translation.googleapis.com/language/translate/v2?key=' . $apiKey;
-            $data = array(
-                'q' => $text,
-                'source' => 'en',
-                'target' => 'vi',
-                'format' => 'text'
-            );
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-            $response = curl_exec($ch);
-            curl_close($ch);
-            $result = json_decode($response, true);
-            return $result['data']['translations'][0]['translatedText'];
-        }
+
+// Hàm dịch từ tiếng Anh sang tiếng Việt bằng Google Translate API
+function translateText($text, $apiKey) {
+    $url = 'https://translation.googleapis.com/language/translate/v2?key=' . $apiKey;
+    $data = array(
+        'q' => $text,
+        'source' => 'en',
+        'target' => 'vi',
+        'format' => 'text'
+    );
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    $response = curl_exec($ch);
+    curl_close($ch);
+    $result = json_decode($response, true);
+    return $result['data']['translations'][0]['translatedText'];
+}
+
+// Hàm gọi Google Cloud Natural Language API để nhận diện các thực thể
+function analyzeEntities($text, $apiKey) {
+    $url = 'https://language.googleapis.com/v1/documents:analyzeEntities?key=' . $apiKey;
+    $document = array(
+        'document' => array(
+            'type' => 'PLAIN_TEXT',
+            'content' => $text
+        ),
+        'encodingType' => 'UTF8'
+    );
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($document));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        'Content-Type: application/json'
+    ));
+    $response = curl_exec($ch);
+    curl_close($ch);
+    return json_decode($response, true);
+}
+
+// Danh sách các nguyên liệu phổ biến
+$ingredientsList = ["fish", "kitten", "dog", "cat", "chicken", "flour", "sugar", "eggs", "egg", "butter", "milk", "salt", "oil", "yeast", "vanilla", "chocolate", "water", "honey", "rice", "garlic", "onion", "tomato", "potato", "carrot", "chicken", "beef", "pork", "fish", "shrimp", "cheese", "cream", "yogurt", "bread", "pasta", "basil", "parsley", "cilantro", "oregano", "thyme", "rosemary", "pepper", "cinnamon", "ginger", "turmeric", "soy sauce", "vinegar", "mustard", "ketchup", "mayonnaise", "olive oil", "vegetable oil", "cornstarch", "baking powder", "baking soda", "cocoa powder", "coconut milk", "peanut butter", "almonds", "walnuts", "cashews", "spinach", "broccoli", "lettuce", "cucumber", "bell pepper", "mushroom", "zucchini", "peas", "corn", "beans", "lentils", "chickpeas", "tofu", "noodles", "sardines", "tuna", "lobster", "crab", "clams", "oysters", "scallops", "lamb", "duck", "turkey", "bacon", "sausage", "ham", "maple syrup", "molasses", "apple", "banana", "grape", "orange", "lemon", "lime", "strawberry", "blueberry", "raspberry", "blackberry", "pineapple", "mango", "peach", "plum", "cherry", "apricot", "kiwi", "pomegranate", "fig", "date", "raisin", "coconut", "avocado", "papaya", "melon", "cantaloupe", "watermelon", "spinach", "cabbage", "kale", "asparagus", "celery", "eggplant", "beet", "radish", "turnip", "pumpkin", "squash", "sweet potato", "yam", "quinoa", "barley", "oats", "wheat", "rye", "spelt", "buckwheat", "millet", "sorghum", "chia seeds", "flax seeds", "sunflower seeds", "pumpkin seeds"];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+    // Lưu trữ hình ảnh tạm thời
+    $uploadDir = 'uploads/';
+    if (!file_exists($uploadDir)) {
+        mkdir($uploadDir, 0777, true);
+    }
+    $uploadFile = $uploadDir . basename($_FILES['image']['name']);
+    move_uploaded_file($_FILES['image']['tmp_name'], $uploadFile);
     
-        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-            $imageData = base64_encode(file_get_contents($_FILES['image']['tmp_name']));
+    $imageData = base64_encode(file_get_contents($uploadFile));
+    //Them api vao 
+    $visionApiKey = '';
+    $translateApiKey = '';
+    $languageApiKey = '';
     
-            $curl = curl_init();
+    $curl = curl_init();
     
-            curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://vision.googleapis.com/v1/images:annotate?key=",
-                CURLOPT_SSL_VERIFYHOST => 0,
-                CURLOPT_SSL_VERIFYPEER => 0,
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",                       
-                CURLOPT_POSTFIELDS => '{
-                    "requests":[{
-                        "image":{"content":"'. $imageData .'"},
-                        "features":[{"type":"LABEL_DETECTION"}],
-                        "imageContext":{"languageHints":["vi"]}
-                    }]
-                }',
-                CURLOPT_HTTPHEADER => array(
-                    "cache-control: no-cache",
-                    "content-type: application/json"
-                ),
-            ));
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => "https://vision.googleapis.com/v1/images:annotate?key=" . $visionApiKey,
+        CURLOPT_SSL_VERIFYHOST => 0,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POSTFIELDS => json_encode(array(
+            'requests' => array(
+                array(
+                    'image' => array(
+                        'content' => $imageData
+                    ),
+                    'features' => array(
+                        array('type' => 'LABEL_DETECTION')
+                    ),
+                    'imageContext' => array(
+                        'languageHints' => array('vi')
+                    )
+                )
+            )
+        )),
+        CURLOPT_HTTPHEADER => array(
+            "cache-control: no-cache",
+            "content-type: application/json"
+        ),
+    ));
     
-            $response = curl_exec($curl);
-            $err = curl_error($curl);
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
     
-            curl_close($curl);
+    curl_close($curl);
     
-            if ($err) {
-                echo "Lỗi cURL: " . $err;
-            } else {
-                $data = json_decode($response, true);
-                $labels = $data['responses'][0]['labelAnnotations'];
-    
-                echo "<h3>Nguyên liệu trong ảnh là:</h3>";
-                echo "<ul>";
-                foreach ($labels as $label) {
-                    $translatedText = translateText($label['description']);
+    if ($err) {
+        echo "Lỗi cURL: " . $err;
+    } else {
+        $data = json_decode($response, true);
+        $labels = $data['responses'][0]['labelAnnotations'];
+        
+        echo "<div class='center'>";
+        echo "<img src='" . $uploadFile . "' alt='Uploaded Image' class='centered-image'><br><br>";
+        echo "</div>";
+        
+        echo "<h3>Nguyên liệu trong ảnh là:</h3>";
+        echo "<ul>";
+        
+        $count = 0; // Khởi tạo biến đếm ở ngoài vòng lặp chính
+        foreach ($labels as $label) {
+            $description = $label['description'];
+            $entities = analyzeEntities($description, $languageApiKey);
+            
+            foreach ($entities['entities'] as $entity) {
+                if ($count >= 1) break;
+                if (in_array(strtolower($entity['name']), $ingredientsList)) {
+                    $translatedText = translateText($entity['name'], $translateApiKey);
                     echo "<li>" . $translatedText . "</li>";
+                    $count++;
+                    break;
                 }
-                echo "</ul>";
             }
         }
-        ?>
+        
+        echo "</ul>";
+    }
+}
+?>
     </div>
     </div>
     <div class="row">
