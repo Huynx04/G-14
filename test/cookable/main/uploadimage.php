@@ -19,7 +19,7 @@
         <nav class="header navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
         <div class="container-fluid">
             <div class="logo0 col-1  ">
-                <a class="navbar-brand fa-solid fa-truck-fast" href="user.php"></a>
+                <a class="navbar-brand fa-solid fa-truck-fast" href="../index.php"></a>
             </div>
             <div class="logo1 col-7 pa-y-2 " > 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -143,7 +143,7 @@ function analyzeEntities($text, $apiKey) {
 }
 
 // Danh sách các nguyên liệu phổ biến
-$ingredientsList = ["fish", "kitten", "dog", "cat", "chicken", "flour", "sugar", "eggs", "egg", "butter", "milk", "salt", "oil", "yeast", "vanilla", "chocolate", "water", "honey", "rice", "garlic", "onion", "tomato", "potato", "carrot", "chicken", "beef", "pork", "fish", "shrimp", "cheese", "cream", "yogurt", "bread", "pasta", "basil", "parsley", "cilantro", "oregano", "thyme", "rosemary", "pepper", "cinnamon", "ginger", "turmeric", "soy sauce", "vinegar", "mustard", "ketchup", "mayonnaise", "olive oil", "vegetable oil", "cornstarch", "baking powder", "baking soda", "cocoa powder", "coconut milk", "peanut butter", "almonds", "walnuts", "cashews", "spinach", "broccoli", "lettuce", "cucumber", "bell pepper", "mushroom", "zucchini", "peas", "corn", "beans", "lentils", "chickpeas", "tofu", "noodles", "sardines", "tuna", "lobster", "crab", "clams", "oysters", "scallops", "lamb", "duck", "turkey", "bacon", "sausage", "ham", "maple syrup", "molasses", "apple", "banana", "grape", "orange", "lemon", "lime", "strawberry", "blueberry", "raspberry", "blackberry", "pineapple", "mango", "peach", "plum", "cherry", "apricot", "kiwi", "pomegranate", "fig", "date", "raisin", "coconut", "avocado", "papaya", "melon", "cantaloupe", "watermelon", "spinach", "cabbage", "kale", "asparagus", "celery", "eggplant", "beet", "radish", "turnip", "pumpkin", "squash", "sweet potato", "yam", "quinoa", "barley", "oats", "wheat", "rye", "spelt", "buckwheat", "millet", "sorghum", "chia seeds", "flax seeds", "sunflower seeds", "pumpkin seeds"];
+$ingredientsList = ["fish", "kitten", "dog", "cat", "chicken", "flour", "sugar", "eggs", "egg", "butter", "milk", "salt", "oil", "yeast", "vanilla", "chocolate", "water", "honey", "rice", "garlic", "onion", "tomato", "potato", "carrot", "chicken", "beef", "pork", "fish", "shrimp", "cheese", "cream", "yogurt", "bread", "pasta", "basil", "parsley", "cilantro", "oregano", "thyme", "rosemary", "pepper", "cinnamon", "ginger", "turmeric", "soy sauce", "vinegar", "mustard", "ketchup", "mayonnaise", "olive oil", "vegetable oil", "cornstarch", "baking powder", "baking soda", "cocoa powder", "coconut milk", "peanut butter", "almonds", "walnuts", "cashews", "spinach", "broccoli", "lettuce", "cucumber", "bell pepper", "mushroom", "zucchini", "peas", "corn", "beans", "lentils", "chickpeas", "tofu", "noodles", "sardines", "tuna", "lobster", "crab", "clams", "oysters", "scallops", "lamb", "duck", "turkey", "bacon", "sausage", "ham", "maple syrup", "molasses", "apple", "banana", "grape", "orange", "lemon", "lime", "strawberry", "blueberry", "raspberry", "blackberry", "pineapple", "mango", "peach", "plum", "cherry", "apricot", "kiwi", "pomegranate", "fig", "date", "raisin", "coconut", "avocado", "papaya", "melon", "cantaloupe", "watermelon", "spinach", "cabbage", "kale", "asparagus", "celery", "eggplant", "beet", "radish", "turnip", "pumpkin", "squash", "sweet potato", "yam", "quinoa", "barley", "oats", "wheat", "rye", "spelt", "buckwheat", "millet", "sorghum", "chia seeds", "flax seeds", "sunflower seeds", "pumpkin seeds","dog", "cat", "mouse", "horse", "cow", "pig", "sheep", "goat", "chicken", "duck", "goose", "turkey", "rabbit", "hamster", "guinea pig", "rat", "deer", "elephant", "lion", "tiger", "bear", "wolf", "fox", "monkey", "ape", "gorilla", "chimpanzee", "kangaroo", "koala", "panda", "leopard", "cheetah", "jaguar", "zebra", "giraffe", "rhinoceros", "hippopotamus", "crocodile", "alligator", "snake", "lizard", "turtle", "frog", "toad", "bat", "squirrel", "hedgehog", "badger", "otter", "beaver", "raccoon", "skunk", "opossum", "porcupine", "moose", "buffalo", "bison", "camel", "donkey", "mule", "owl", "eagle", "hawk", "falcon", "sparrow", "pigeon", "dove", "parrot", "penguin", "flamingo", "peacock", "seagull", "swan", "pelican", "stork", "heron", "crane", "robin", "blue jay", "cardinal", "crow", "raven", "magpie", "woodpecker", "hummingbird", "vulture", "ostrich", "emu", "kiwi", "platypus", "whale", "dolphin", "shark", "seal","squid", "sea lion", "walrus", "octopus", "squid", "jellyfish", "starfish", "crab", "lobster"];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
     // Lưu trữ hình ảnh tạm thời
@@ -155,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image']) && $_FILES[
     move_uploaded_file($_FILES['image']['tmp_name'], $uploadFile);
     
     $imageData = base64_encode(file_get_contents($uploadFile));
-    //Them api vao 
+    
     $visionApiKey = '';
     $translateApiKey = '';
     $languageApiKey = '';
