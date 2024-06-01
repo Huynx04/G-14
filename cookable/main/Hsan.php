@@ -98,7 +98,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Bánh đa cua Hải Phòng</h5>
                     <p class="card-text"> Thịt cua được nấu chín và thái nhỏ, sau đó trộn cùng bánh đa và các loại gia vị tạo nên một hương vị đặc trưng và hấp dẫn của ẩm thực Hải Phòng.</p>
-                    <a href="hsan1.php" class="btn btn-primary">View Recipe</a>
+                    <a href="BanhDaCua.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Bún ốc nguội</h5>
                     <p class="card-text"> Một món ăn mát lành và hấp dẫn, bún ốc nguội thường được chế biến từ bún mềm và dai, kèm theo ốc ngon và các loại rau sống tươi ngon như rau sống, rau thơm, và rau sống. </p>
-                    <a href="hsan2.php" class="btn btn-primary">View Recipe</a>
+                    <a href="BunOcNguoi.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <h5 class="card-title">Lẩu riêu cua</h5>
                     <p class="card-text">Lẩu riêu cua thường được làm từ riêu cua sánh mịn kết hợp với thịt cua và các loại rau củ. Món ăn này có hương vị đậm đà, đặc trưng của riêu cua ngọt và thơm, kết hợp với vị ngọt của thịt cua và vị tươi mát của rau củ.
                     </p>
-                    <a href="hsan3.php" class="btn btn-primary">View Recipe</a>
+                    <a href="LauRieuCua.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
