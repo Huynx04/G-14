@@ -99,7 +99,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Bắp bò ngâm mắm</h5>
                     <p class="card-text"> Bắp bò sau đó được thái thành từng lát mỏng và thường được ăn kèm với rau sống và nước mắm chua ngọt</p>
-                    <a href="scr_thitbo1.php" class="btn btn-primary">View Recipe</a>
+                    <a href="BapBoNgamMam.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Bò hầm kiểu pháp</h5>
                     <p class="card-text"> Một món ăn sang trọng và hấp dẫn, bò hầm kiểu Pháp thường được chế biến từ thịt bò mềm và thơm, nấu chín trong nước dùng thơm ngon và rượu vang.</p>
-                    <a href="scr_thitbo2.php" class="btn btn-primary">View Recipe</a>
+                    <a href="BoHamKieuPhap.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
                     <h5 class="card-title">Bò kho</h5>
                     <p class="card-text"> Thịt bò được nấu chín mềm trong nước dùng thơm ngon, kèm theo cà rốt, khoai tây, và các loại gia vị như ớt, hành, gừng, và hồi.
                     </p>
-                    <a href="scr_thitbo3.php" class="btn btn-primary">View Recipe</a>
+                    <a href="BoKho.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
