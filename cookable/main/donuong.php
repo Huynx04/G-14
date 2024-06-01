@@ -96,7 +96,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Sườn nướng chả</h5>
                     <p class="card-text">Sườn được ướp gia vị tự nhiên, sau đó nướng trên lửa than cho đến khi chín vàng. Khi ăn, bạn sẽ cảm nhận được vị ngọt của sườn cùng với độ béo của trứng, tạo nên một trải nghiệm ẩm thực đầy hấp dẫn.</p>
-                    <a href="scr_nuong1.php" class="btn btn-primary">View Recipe</a>
+                    <a href="SuonNuongChaTrung.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
                 <div class="card-body">
                     <h5 class="card-title">tôm nướng bơ tỏi</h5>
                     <p class="card-text"> Hương vị của tôm ngọt tự nhiên kết hợp hoàn hảo với hương thơm của bơ và tỏi, tạo nên một trải nghiệm ẩm thực độc đáo và hấp dẫn..</p>
-                    <a href="scr_nuong2.php" class="btn btn-primary">View Recipe</a>
+                    <a href="TomNuongBoToi.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
                     <h5 class="card-title">Vịt quay bắc kinh</h5>
                     <p class="card-text"> Vịt được ướp gia vị đặc biệt, sau đó nướng trên lửa than cho đến khi lớp da ngoài giòn tan và vàng óng. Khi ăn, bạn sẽ cảm nhận được hương vị đặc trưng của vịt, kết hợp với độ giòn rụm của lớp da
                     </p>
-                    <a href="scr_nuong3.php" class="btn btn-primary">View Recipe</a>
+                    <a href="VitQuayBacKinh.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
