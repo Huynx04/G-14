@@ -99,7 +99,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cánh gà sốt me cay</h5>
                     <p class="card-text"> Thịt gà được ướp với nước sốt me cay từ quả me chua chua, ngọt ngọt kết hợp cùng với các gia vị tự nhiên như ớt, tỏi, ớt hiểm, tiêu... tạo ra một hương vị đặc trưng không thể cưỡng lại.</p>
-                    <a href="chien1.php" class="btn btn-primary">View Recipe</a>
+                    <a href="CanhGaSotMeCay.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Bánh tôm Hồ Tây</h5>
                     <p class="card-text">Bánh tôm Hồ Tây là một món ăn truyền thống phổ biến ở Hà Nội. Bánh được làm từ tôm xay nhuyễn, trộn với bột và gia vị, sau đó chiên giòn và thưởng thức với nước mắm chua ngọt.</p>
-                    <a href="chien2.php" class="btn btn-primary">View Recipe</a>
+                    <a href="BanhTomHoTay.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
                     <h5 class="card-title">Nem cá</h5>
                     <p class="card-text">Nem cá là một món ăn ngon và bổ dưỡng. Nó được làm từ cá xay nhuyễn, pha trộn với gia vị và các loại rau sống, sau đó cuộn trong lá chuối và chiên giòn. Đây là một lựa chọn tuyệt vời cho bữa ăn nhẹ hoặc tiệc tối.
                     </p>
-                    <a href="chien3.php" class="btn btn-primary">View Recipe</a>
+                    <a href="NemCa.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
