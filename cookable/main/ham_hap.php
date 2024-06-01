@@ -98,7 +98,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Há cảo tôm</h5>
                     <p class="card-text"> Mỗi viên há cảo tôm thường được hình thành và uốn cong một cách tinh tế trước khi được hấp chín. Hương vị tươi ngon của tôm kết hợp với vị ngọt của bột mì tạo nên một trải nghiệm ẩm thực độc đáo và hấp dẫn.</p>
-                    <a href="scr_hap1.php" class="btn btn-primary">View Recipe</a>
+                    <a href="HaCaoTom.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cơm hấp kiểu Nhật</h5>
                     <p class="card-text"> Cơm được hấp mềm và thơm ngon, thường được kết hợp với các loại gia vị như dưa leo, rau cải và các loại đậu. Món ăn này thường được ăn kèm với nước sốt đậu nành hoặc nước mắm pha chua ngọt.</p>
-                    <a href="scr_hap2.php" class="btn btn-primary">View Recipe</a>
+                    <a href="ComhapkieuNhat.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <h5 class="card-title">Chả giò ngũ sắc</h5>
                     <p class="card-text"> Chả giò thường được ăn kèm với nước mắm pha chua ngọt hoặc nước chấm đặc biệt để tăng thêm hương vị. Đây là một món ăn phổ biến trong các dịp lễ, tết và hội họp gia đình, bạn bè.
                     </p>
-                    <a href="scr_hap3.php" class="btn btn-primary">View Recipe</a>
+                    <a href="ChaGioNguSac.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
