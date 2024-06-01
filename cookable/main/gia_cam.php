@@ -98,7 +98,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cánh gà nướng cay kiểu Hàn</h5>
                     <p class="card-text">Cánh gà được ướp gia vị đặc trưng, sau đó nướng chín vàng và giòn, tạo ra một lớp vỏ ngoài cay giòn và thịt gà mềm và thơm.</p>
-                    <a href="gia_cam1.php" class="btn btn-primary">View Recipe</a>
+                    <a href="CanhGaNuongCay.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Vịt quay mật ong da giòn</h5>
                     <p class="card-text"> Vịt được ướp gia vị đặc trưng, sau đó quay chín vàng và giòn, tạo ra một lớp da ngoài giòn rụm và thịt vịt mềm và thơm. </p>
-                    <a href="gia_cam2.php" class="btn btn-primary">View Recipe</a>
+                    <a href="VitQuay.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <h5 class="card-title">Mề gà xào húng quế</h5>
                     <p class="card-text"> Mề gà được xào chín vàng cùng với húng quế và các loại gia vị khác, tạo ra một món ăn đậm đà và hấp dẫn. Món ăn này thường được ăn kèm với cơm trắng và rau sống, tạo nên một bữa ăn ngon và bổ dưỡng.
                     </p>
-                    <a href="gia_cam3.php" class="btn btn-primary">View Recipe</a>
+                    <a href="MeGaXaoHungQue.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
