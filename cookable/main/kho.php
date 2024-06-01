@@ -101,7 +101,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Kho quẹt</h5>
                     <p class="card-text">  Một món ăn truyền thống và phổ biến trong ẩm thực Việt Nam, kho quẹt là sự kết hợp hài hòa giữa thịt bò, thịt heo hoặc thịt gà được kho cùng với nước mắm, đường và các loại gia vị khác.</p>
-                    <a href="scr_kho1.php" class="btn btn-primary">View Recipe</a>
+                    <a href="KhoQuet.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Mì vịt tiềm</h5>
                     <p class="card-text"> Mì và thịt vịt được nấu cùng với các loại gia vị và thảo mộc, tạo nên một món ăn đầy hấp dẫn và bổ dưỡng.</p>
-                    <a href="scr_kho2.php" class="btn btn-primary">View Recipe</a>
+                    <a href="MiVitTiem.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                     <h5 class="card-title">Sườn xào chua ngọt</h5>
                     <p class="card-text">Sườn heo được xào chín vàng cùng với sốt chua ngọt, tạo ra một hương vị đặc trưng và hấp dẫn.
                     </p>
-                    <a href="scr_kho3.php" class="btn btn-primary">View Recipe</a>
+                    <a href="SuonXaoChuaNgot.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
         </div>
